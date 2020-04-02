@@ -1,0 +1,581 @@
+site name,site code,state,system,subsite,latitude,longitude,individual ID,sample date,sample month,sample day,sample year,sample type,sample depth (cm),sediment MeHg (ng/g DW),sediment THg (ng/g DW),%LOI,%MeHg,,,,notes,notes 2,notes 3,,,,,file name for data pull
+Above,A,ME,Penobscot River,,44.76309,-68.80048,,,July,,2016,grab,0-2,1.62,74.10,4.00,2,,,,,,,,,,,
+Above,A,ME,Penobscot River,,44.76309,-68.80048,,,July,,2016,grab,0-2,1.38,55.30,3.20,2,,,,,,,,,,,
+Above,A,ME,Penobscot River,,44.76309,-68.80048,,,July,,2016,grab,0-2,2.25,17.60,2.30,13,,,,,,,,,,,
+East Union,EU,NJ,Berry's Creek,,40.82057,-74.08614,,,July,,2016,grab,0-2,40.69,10943.50,7.40,0,,,,,,,,,,,
+East Union,EU,NJ,Berry's Creek,,40.82057,-74.08614,,,July,,2016,grab,0-2,50.22,56203.00,10.60,0,,,,,,,,,,,
+East Union,EU,NJ,Berry's Creek,,40.82057,-74.08614,,,July,,2016,grab,0-2,96.68,40955.90,11.90,0,,,,,,,,,,,
+Laurel Hill,LH,NJ,Hackensack River,,40.7627,-74.08808,,,July,,2016,grab,0-2,29.92,2119.70,11.50,1,,,,,,,,,,,
+Laurel Hill,LH,NJ,Hackensack River,,40.7627,-74.08808,,,July,,2016,grab,0-2,15.59,2439.30,10.60,1,,,,,,,,,,,
+Laurel Hill,LH,NJ,Hackensack River,,40.7627,-74.08808,,,July,,2016,grab,0-2,25.43,2068.90,9.10,1,,,,,,,,,,,
+Marsh,M,ME,Penobscot River,,44.59109,-68.86432,,,July,,2016,grab,0-2,27.76,901.80,16.10,3,,,,,,,,,,,
+Marsh,M,ME,Penobscot River,,44.59109,-68.86432,,,July,,2016,grab,0-2,21.36,643.30,10.90,3,,,,,,,,,,,
+Marsh,M,ME,Penobscot River,,44.59109,-68.86432,,,July,,2016,grab,0-2,12.19,843.10,14.60,1,,,,,,,,,,,
+Moose Point,MP,ME,Penobscot River,,44.43203,-68.94191,,,July,,2016,grab,0-2,0.27,20.50,3.30,1,,,,,,,,,,,
+Moose Point,MP,ME,Penobscot River,,44.43203,-68.94191,,,July,,2016,grab,0-2,0.20,18.10,3.30,1,,,,,,,,,,,
+Moose Point,MP,ME,Penobscot River,,44.43203,-68.94191,,,July,,2016,grab,0-2,0.75,20.00,3.40,4,,,,,,,,,,,
+Orrington,O,ME,Penobscot River,,44.69021,-68.81847,,,July,,2016,grab,0-2,30.56,791.80,16.00,4,,,,,,,,,,,
+Orrington,O,ME,Penobscot River,,44.69021,-68.81847,,,July,,2016,grab,0-2,40.22,1183.00,23.40,3,,,,,,,,,,,
+Orrington,O,ME,Penobscot River,,44.69021,-68.81847,,,July,,2016,grab,0-2,35.52,985.10,15.50,4,,,,,,,,,,,
+Route 3 Underpass,3A,NJ,Berry's Creek,,40.81124,-74.09121,,,July,,2016,grab,0-2,7.70,2730.40,10.21,0,,,,,,,,,,,
+Route 3 Underpass,3A,NJ,Berry's Creek,,40.81124,-74.09121,,,July,,2016,grab,0-2,6.25,1264.35,8.98,0,,,,,,,,,,,
+Route 3 Underpass,3A,NJ,Berry's Creek,,40.81124,-74.09121,,,July,,2016,grab,0-2,8.44,3140.05,7.26,0,,,,,,,,,,,
+Rutkowski Park,RP,NJ,Hackensack River,,40.68846,-74.11045,,,July,,2016,grab,0-2,3.43,210.20,5.30,2,,,,,,,,,,,
+Rutkowski Park,RP,NJ,Hackensack River,,40.68846,-74.11045,,,July,,2016,grab,0-2,1.01,134.00,1.90,1,,,,,,,,,,,
+Rutkowski Park,RP,NJ,Hackensack River,,40.68846,-74.11045,,,July,,2016,grab,0-2,1.40,83.20,1.90,2,,,,,,,,,,,
+Stiletto's,ST,NJ,Berry's Creek,,40.82857,-74.07998,,,July,,2016,grab,0-2,40.58,15711.85,11.08,0,,,,,,,,,,,
+Stiletto's,ST,NJ,Berry's Creek,,40.82857,-74.07998,,,July,,2016,grab,0-2,38.62,13541.05,10.73,0,,,,,,,,,,,
+Stiletto's,ST,NJ,Berry's Creek,,40.82857,-74.07998,,,July,,2016,grab,0-2,31.81,13001.60,10.72,0,,,,,,,,,,,
+Verona,V,ME,Penobscot River,,44.56907,-68.79124,,,July,,2016,grab,0-2,24.54,339.80,8.60,7,,,,,,,,,,,
+Verona,V,ME,Penobscot River,,44.56907,-68.79124,,,July,,2016,grab,0-2,19.02,530.00,6.60,4,,,,,,,,,,,
+Verona,V,ME,Penobscot River,,44.56907,-68.79124,,,July,,2016,grab,0-2,13.95,692.20,14.50,2,,,,,,,,,,,
+Veteran's Park,VP,NJ,Hackensack River,,40.67028,-74.12708,,,July,,2016,grab,0-2,2.28,264.00,7.51,1,,,,,,,,,,,
+Veteran's Park,VP,NJ,Hackensack River,,40.67028,-74.12708,,,July,,2016,grab,0-2,1.54,467.65,6.81,0,,,,,,,,,,,
+Veteran's Park,VP,NJ,Hackensack River,,40.67028,-74.12708,,,July,,2016,grab,0-2,2.20,362.60,4.31,1,,,,,,,,,,,
+Above,A,ME,Penobscot River,,44.76309,-68.80048,,,May,,2016,grab,0-2,0.03,2.70,1.70,1,,,,,,,,,,,
+Above,A,ME,Penobscot River,,44.76309,-68.80048,,,May,,2016,grab,0-2,3.08,184.50,4.90,2,,,,,,,,,,,
+East Union,EU,NJ,Berry's Creek,,40.82057,-74.08614,,,May,,2016,grab,0-2,39.56,8079.60,12.80,0,,,,,,,,,,,
+East Union,EU,NJ,Berry's Creek,,40.82057,-74.08614,,,May,,2016,grab,0-2,16.64,3614.60,4.50,0,,,,,,,,,,,
+Laurel Hill,LH,NJ,Hackensack River,,40.7627,-74.08808,,,May,,2016,grab,0-2,4.08,1645.20,7.40,0,,,,,,,,,,,
+Laurel Hill,LH,NJ,Hackensack River,,40.7627,-74.08808,,,May,,2016,grab,0-2,11.34,1700.60,7.90,1,,,,,,,,,,,
+Marsh,M,ME,Penobscot River,,44.59109,-68.86432,,,May,,2016,grab,0-2,,,,,,,,,,,,,,,
+Marsh,M,ME,Penobscot River,,44.59109,-68.86432,,,May,,2016,grab,0-2,,,,,,,,,,,,,,,
+Moose Point,MP,ME,Penobscot River,,44.43203,-68.94191,,,May,,2016,grab,0-2,0.01,10.00,4.00,0,,,,,,,,,,,
+Moose Point,MP,ME,Penobscot River,,44.43203,-68.94191,,,May,,2016,grab,0-2,0.22,7.60,4.00,3,,,,,,,,,,,
+Orrington,O,ME,Penobscot River,,44.69021,-68.81847,,,May,,2016,grab,0-2,31.62,1014.90,19.60,3,,,,,,,,,,,
+Orrington,O,ME,Penobscot River,,44.69021,-68.81847,,,May,,2016,grab,0-2,76.77,1080.80,17.60,7,,,,,,,,,,,
+Route 3 Underpass,3A,NJ,Berry's Creek,,40.81124,-74.09121,,,May,,2016,grab,0-2,8.00,2289.10,6.10,0,,,,,,,,,,,
+Route 3 Underpass,3A,NJ,Berry's Creek,,40.81124,-74.09121,,,May,,2016,grab,0-2,12.97,3737.60,5.60,0,,,,,,,,,,,
+Rutkowski Park,RP,NJ,Hackensack River,,40.68846,-74.11045,,,May,,2016,grab,0-2,1.59,164.70,2.50,1,,,,,,,,,,,
+Rutkowski Park,RP,NJ,Hackensack River,,40.68846,-74.11045,,,May,,2016,grab,0-2,0.67,34.30,1.30,2,,,,,,,,,,,
+Stiletto's,ST,NJ,Berry's Creek,,40.82857,-74.07998,,,May,,2016,grab,0-2,,24918.30,11.80,0,,,,,,,,,,,
+Stiletto's,ST,NJ,Berry's Creek,,40.82857,-74.07998,,,May,,2016,grab,0-2,46.16,23238.67,12.70,0,,,,,,,,,,,
+Verona,V,ME,Penobscot River,,44.56907,-68.79124,,,May,,2016,grab,0-2,5.36,371.40,7.20,1,,,,,,,,,,,
+Verona,V,ME,Penobscot River,,44.56907,-68.79124,,,May,,2016,grab,0-2,7.65,433.80,5.70,2,,,,,,,,,,,
+Veteran's Park,VP,NJ,Hackensack River,,40.67028,-74.12708,,,May,,2016,grab,0-2,0.39,132.10,2.10,0,,,,,,,,,,,
+Veteran's Park,VP,NJ,Hackensack River,,40.67028,-74.12708,,,May,,2016,grab,0-2,0.75,184.00,2.40,0,,,,,,,,,,,
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,BI HOC,,August,,2015,grab,0-4,0.222302292070521,42.2195,11.1111111111111,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,BI HOC,,August,,2015,grab,0-4,0.116349724539449,39.0842,10.9278350515464,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,BI HOC,,August,,2015,grab,0-4,0.249573899669562,71.5462,10.6751042998216,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,BI HOC,,August,,2015,grab,0-4,0.171627473943138,96.7231,15.625,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,BI HOC,,August,,2015,grab,0-4,0.227937185808868,95.2441,13.2331485264079,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,BI HOC,,August,,2015,grab,0-4,0.353718215142247,74.8321,13.4326439146248,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,BI HOC,,August,,2015,grab,0-4,0.063593584626137,64.4944,12.5,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,BI HOC,,August,,2015,grab,0-4,0.105505405701325,87.0218,17.2789802151109,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,BI HOC,,August,,2015,grab,0-4,0.056567538584994,84.1189,13.0741120249549,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,BI LOC,,August,,2015,grab,0-4,0.284771943600304,6.9806,1.37457044673543,4,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,BI LOC,,August,,2015,grab,0-4,0.262527527768712,8.77056666666667,1.06489393583499,3,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,BI LOC,,August,,2015,grab,0-4,0.273221534612542,9.305,1.02573958810743,3,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,BI LOC,,August,,2015,grab,0-4,0.434760781337879,13.5425,1.75097276264591,3,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,BI LOC,,August,,2015,grab,0-4,0.585694024907249,12.5554,1.60513643659713,5,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,BI LOC,,August,,2015,grab,0-4,0.33654352803519,11.8823,1.24914972099784,3,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,BI LOC,,August,,2015,grab,0-4,0.713477216841332,16.509,2.32067510548522,4,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,BI LOC,,August,,2015,grab,0-4,0.505589931416357,10.4119,1.77130139591225,5,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,BI LOC,,August,,2015,grab,0-4,0.385117163083004,13.0954,2.14680044164945,3,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-H,ME,Webhannet River,HOC,43.33027,-70.55853,DR HOC,,September,,2015,grab,0-4,0.878069865814736,16.0221,6.88935281837165,5,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-H,ME,Webhannet River,HOC,43.33027,-70.55853,DR HOC,,September,,2015,grab,0-4,0.966054604923942,31.8988,7.69230769230769,3,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-H,ME,Webhannet River,HOC,43.33027,-70.55853,DR HOC,,September,,2015,grab,0-4,0.29892342787791,11.259,5.66561995423521,3,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-H,ME,Webhannet River,HOC,43.33027,-70.55853,DR HOC,,September,,2015,grab,0-4,0.347649965490951,10.4061,5.70522979397781,3,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-H,ME,Webhannet River,HOC,43.33027,-70.55853,DR HOC,,September,,2015,grab,0-4,0.355262783035621,30.1329,4.16471449881791,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-H,ME,Webhannet River,HOC,43.33027,-70.55853,DR HOC,,September,,2015,grab,0-4,0.279000028542424,27.9467,9.15851026016696,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-H,ME,Webhannet River,HOC,43.33027,-70.55853,DR HOC,,September,,2015,grab,0-4,0.293748158681602,7.5609,4.69696969696968,4,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-H,ME,Webhannet River,HOC,43.33027,-70.55853,DR HOC,,September,,2015,grab,0-4,0.214813766770719,6.3281,3.69436351694986,3,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-H,ME,Webhannet River,HOC,43.33027,-70.55853,DR HOC,,September,,2015,grab,0-4,0.226702874472608,6.20096666666667,4.14979757085022,4,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-L,ME,Webhannet River,LOC,43.32265,-70.55818,DR LOC,,September,,2015,grab,0-4,0.061190382625828,4.7602,0.873709293089749,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-L,ME,Webhannet River,LOC,43.32265,-70.55818,DR LOC,,September,,2015,grab,0-4,0.022677215216263,4.2012,0.941179800724619,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-L,ME,Webhannet River,LOC,43.32265,-70.55818,DR LOC,,September,,2015,grab,0-4,0.003339996619722,2.1842,0.567399721841839,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-L,ME,Webhannet River,LOC,43.32265,-70.55818,DR LOC,,September,,2015,grab,0-4,0.034052181697349,4.2131,1.01651842439642,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-L,ME,Webhannet River,LOC,43.32265,-70.55818,DR LOC,,September,,2015,grab,0-4,0.390777536329739,9.9053,2.00652504681649,4,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-L,ME,Webhannet River,LOC,43.32265,-70.55818,DR LOC,,September,,2015,grab,0-4,0.10835828520957,5.8406,1.32943294329433,2,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-L,ME,Webhannet River,LOC,43.32265,-70.55818,DR LOC,,September,,2015,grab,0-4,0.005560068046748,3.2831,1.30353817504656,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-L,ME,Webhannet River,LOC,43.32265,-70.55818,DR LOC,,September,,2015,grab,0-4,0.011408846247197,5.0089,0.851468601095227,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Drake's Island,DI-L,ME,Webhannet River,LOC,43.32265,-70.55818,DR LOC,,September,,2015,grab,0-4,0.017312077367822,14.1399,1.12745374548738,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Goshen Cove,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,GC HOC,,August,,2015,grab,0-4,0.203040121064557,203.5935,13.1630648330059,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Goshen Cove,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,GC HOC,,August,,2015,grab,0-4,0.26908466763716,182.0581,12.7675550300163,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Goshen Cove,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,GC HOC,,August,,2015,grab,0-4,0.233599983335624,145.1007,10.5603448275862,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Goshen Cove,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,GC HOC,,August,,2015,grab,0-4,0.269742606493208,180.1615,11.0376516773733,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Goshen Cove,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,GC HOC,,August,,2015,grab,0-4,0.259826785947695,137.8567,10.3815507201961,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Goshen Cove,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,GC HOC,,August,,2015,grab,0-4,0.162712469597097,169.3099,14.4086021505376,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Goshen Cove,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,GC HOC,,August,,2015,grab,0-4,0.268792321361024,198.8652,18.1664223850766,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Goshen Cove,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,GC HOC,,August,,2015,grab,0-4,0.219321350696268,189.014,16.3971104165338,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Goshen Cove,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,GC LOC,,August,,2015,grab,0-4,0.125947472050134,1.8578,0.82530949105913,7,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Goshen Cove,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,GC LOC,,August,,2015,grab,0-4,0.057281402505208,1.4649,0.778316172016978,4,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Goshen Cove,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,GC LOC,,August,,2015,grab,0-4,0.040548893210093,1.8268,0.769400314372385,2,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Goshen Cove,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,GC LOC,,August,,2015,grab,0-4,0.080323723614965,26.5894,5.15873015873026,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Goshen Cove,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,GC LOC,,August,,2015,grab,0-4,0.028164688024539,16.5428,3.8123332388202,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Goshen Cove,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,GC LOC,,August,,2015,grab,0-4,0.061018553215674,22.3957,4.97644567853293,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Goshen Cove,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,GC LOC,,August,,2015,grab,0-4,0.021827103955505,5.0369,1.43229166666666,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Goshen Cove,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,GC LOC,,August,,2015,grab,0-4,0.054357883453047,18.1303,6.7253372043791,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Goshen Cove,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,GC LOC,,August,,2015,grab,0-4,0.097500585730477,10.7618,2.99548715779086,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Cedar Creek,SB-H,DE,Delaware River,HOC,38.94524,-75.31839,SB HOC,,July,,2015,grab,0-4,3.1231863,171.4103,9.69294401648294,2,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Cedar Creek,SB-H,DE,Delaware River,HOC,38.94524,-75.31839,SB HOC,,July,,2015,grab,0-4,2.0151746815903,152.3528,9.61388949552299,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Cedar Creek,SB-H,DE,Delaware River,HOC,38.94524,-75.31839,SB HOC,,July,,2015,grab,0-4,2.4050741,151.2933,9.05486084296193,2,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Cedar Creek,SB-H,DE,Delaware River,HOC,38.94524,-75.31839,SB HOC,,July,,2015,grab,0-4,3.9355758,165.1974,9.55967875934645,2,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Cedar Creek,SB-H,DE,Delaware River,HOC,38.94524,-75.31839,SB HOC,,July,,2015,grab,0-4,2.02098089965896,118.2566,7.08931786776099,2,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Cedar Creek,SB-H,DE,Delaware River,HOC,38.94524,-75.31839,SB HOC,,July,,2015,grab,0-4,2.11094898112038,121.655,8.3615102845872,2,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Cedar Creek,SB-H,DE,Delaware River,HOC,38.94524,-75.31839,SB HOC,,July,,2015,grab,0-4,2.7541007,171.4608,11.5689615996365,2,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Cedar Creek,SB-H,DE,Delaware River,HOC,38.94524,-75.31839,SB HOC,,July,,2015,grab,0-4,2.60141056696408,171.8731,10.5263157894737,2,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Cedar Creek,SB-H,DE,Delaware River,HOC,38.94524,-75.31839,SB HOC,,July,,2015,grab,0-4,2.40862237266159,171.5149,10.0763358778625,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Slaughter Beach,SB-L,DE,Delaware River,LOC,38.92772,-75.31368,SB LOC,,July,,2015,grab,0-4,0.201046766017407,33.5884,1.77537637000777,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Slaughter Beach,SB-L,DE,Delaware River,LOC,38.92772,-75.31368,SB LOC,,July,,2015,grab,0-4,0.109744916156446,10.2165,1.26622952958831,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Slaughter Beach,SB-L,DE,Delaware River,LOC,38.92772,-75.31368,SB LOC,,July,,2015,grab,0-4,0.275535786341062,25.3136,2.47033344821279,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Slaughter Beach,SB-L,DE,Delaware River,LOC,38.92772,-75.31368,SB LOC,,July,,2015,grab,0-4,0.199750986583169,26.9728,1.19825708061002,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Slaughter Beach,SB-L,DE,Delaware River,LOC,38.92772,-75.31368,SB LOC,,July,,2015,grab,0-4,0.87100533101839,76.7294,3.71859296482409,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Slaughter Beach,SB-L,DE,Delaware River,LOC,38.92772,-75.31368,SB LOC,,July,,2015,grab,0-4,1.15839328107608,38.5855,2.29681978798591,3,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Slaughter Beach,SB-L,DE,Delaware River,LOC,38.92772,-75.31368,SB LOC,,July,,2015,grab,0-4,0.2025959,45.5302,1.94720154397574,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Slaughter Beach,SB-L,DE,Delaware River,LOC,38.92772,-75.31368,SB LOC,,July,,2015,grab,0-4,0.2498871981335,26.4153,1.67785234899327,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Slaughter Beach,SB-L,DE,Delaware River,LOC,38.92772,-75.31368,SB LOC,,July,,2015,grab,0-4,0.138574250110426,29.6633,1.71673819742486,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-H,ME,Webhannet River,HOC,43.29498,-70.58145,SM HOC,,September,,2015,grab,0-4,0.605440563523478,,5.22151898734175,,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-H,ME,Webhannet River,HOC,43.29498,-70.58145,SM HOC,,September,,2015,grab,0-4,0.919015991783259,38.3746,6.69611276174308,2,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-H,ME,Webhannet River,HOC,43.29498,-70.58145,SM HOC,,September,,2015,grab,0-4,0.334583250344155,12.5529,3.50655949741311,3,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-H,ME,Webhannet River,HOC,43.29498,-70.58145,SM HOC,,September,,2015,grab,0-4,0.995226695777728,26.1801,5.23560209424091,4,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-H,ME,Webhannet River,HOC,43.29498,-70.58145,SM HOC,,September,,2015,grab,0-4,0.43104569385059,18.9227,3.61057382333975,2,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-H,ME,Webhannet River,HOC,43.29498,-70.58145,SM HOC,,September,,2015,grab,0-4,0.49313112249661,14.7838,4.20551404819533,3,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-H,ME,Webhannet River,HOC,43.29498,-70.58145,SM HOC,,September,,2015,grab,0-4,1.48816251397265,49.7414,15.0375939849624,3,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-H,ME,Webhannet River,HOC,43.29498,-70.58145,SM HOC,,September,,2015,grab,0-4,1.50750435792518,40.0026,14.894118527387,4,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-H,ME,Webhannet River,HOC,43.29498,-70.58145,SM HOC,,September,,2015,grab,0-4,2.17354103936811,47.5652,17.2903426332621,5,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-L,ME,Webhannet River,LOC,43.29514,-70.58253,SM LOC,,September,,2015,grab,0-4,0.202392549332937,8.2382,2.37717908082407,2,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-L,ME,Webhannet River,LOC,43.29514,-70.58253,SM LOC,,September,,2015,grab,0-4,0.06940647987482,9.376,2.99216377924628,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-L,ME,Webhannet River,LOC,43.29514,-70.58253,SM LOC,,September,,2015,grab,0-4,0.337746839927376,6.5846,2.24129494179461,5,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-L,ME,Webhannet River,LOC,43.29514,-70.58253,SM LOC,,September,,2015,grab,0-4,0.279331337867769,6.0861,2.35478806907376,5,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-L,ME,Webhannet River,LOC,43.29514,-70.58253,SM LOC,,September,,2015,grab,0-4,0.834087224620912,14.2864,4.28851532101169,6,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-L,ME,Webhannet River,LOC,43.29514,-70.58253,SM LOC,,September,,2015,grab,0-4,0.059250569843162,2.4419,1.11169211998174,2,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-L,ME,Webhannet River,LOC,43.29514,-70.58253,SM LOC,,September,,2015,grab,0-4,0.376675662391192,12.8771,2.91734197730956,3,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-L,ME,Webhannet River,LOC,43.29514,-70.58253,SM LOC,,September,,2015,grab,0-4,0.471674816043997,6.4137,2.35868793762777,7,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Sea Mist,SM-L,ME,Webhannet River,LOC,43.29514,-70.58253,SM LOC,,September,,2015,grab,0-4,0.264636463822037,23.1332,2.96302796302796,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Duck Creek,WB-H,DE,Delaware River,HOC,39.32567,-75.47513,WB HOC,,July,,2015,grab,0-4,3.31091610293799,272.8474,9.04367770243321,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Duck Creek,WB-H,DE,Delaware River,HOC,39.32567,-75.47513,WB HOC,,July,,2015,grab,0-4,2.36692037187851,170.1214,7.61763319189064,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Duck Creek,WB-H,DE,Delaware River,HOC,39.32567,-75.47513,WB HOC,,July,,2015,grab,0-4,3.50178475868791,279.6697,10.5263157894737,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Duck Creek,WB-H,DE,Delaware River,HOC,39.32567,-75.47513,WB HOC,,July,,2015,grab,0-4,3.96832358553397,302.4723,12,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Duck Creek,WB-H,DE,Delaware River,HOC,39.32567,-75.47513,WB HOC,,July,,2015,grab,0-4,4.72109438493402,290.519,11.3325661680092,2,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Duck Creek,WB-H,DE,Delaware River,HOC,39.32567,-75.47513,WB HOC,,July,,2015,grab,0-4,2.90560389198646,289.7542,11.8195956454121,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Duck Creek,WB-H,DE,Delaware River,HOC,39.32567,-75.47513,WB HOC,,July,,2015,grab,0-4,3.1854852393835,273.498,11.472275334608,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Duck Creek,WB-H,DE,Delaware River,HOC,39.32567,-75.47513,WB HOC,,July,,2015,grab,0-4,2.03406642115009,288.4961,11.6317817348745,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Duck Creek,WB-H,DE,Delaware River,HOC,39.32567,-75.47513,WB HOC,,July,,2015,grab,0-4,2.91048258411024,233.5806,10.9589041095891,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Woodland Beach,WB-L,DE,Delaware River,LOC,39.33074,-75.4688,WB LOC,,July,,2015,grab,0-4,0.016377503327759,1.5654,0.534344583157012,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Woodland Beach,WB-L,DE,Delaware River,LOC,39.33074,-75.4688,WB LOC,,July,,2015,grab,0-4,0.013306613857357,1.799,0.480771844000526,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Woodland Beach,WB-L,DE,Delaware River,LOC,39.33074,-75.4688,WB LOC,,July,,2015,grab,0-4,0.047570626071259,15.9349,0.52666227781434,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Woodland Beach,WB-L,DE,Delaware River,LOC,39.33074,-75.4688,WB LOC,,July,,2015,grab,0-4,0.084871667040675,6.8677,0.711009712578741,1,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Woodland Beach,WB-L,DE,Delaware River,LOC,39.33074,-75.4688,WB LOC,,July,,2015,grab,0-4,0.404122263469158,23.6321,1.03950103950105,2,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Woodland Beach,WB-L,DE,Delaware River,LOC,39.33074,-75.4688,WB LOC,,July,,2015,grab,0-4,2.50240528127796,67.9183,3.69540873460245,4,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Woodland Beach,WB-L,DE,Delaware River,LOC,39.33074,-75.4688,WB LOC,,July,,2015,grab,0-4,0.072728843598112,15.2552,0.959445789780223,0,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Woodland Beach,WB-L,DE,Delaware River,LOC,39.33074,-75.4688,WB LOC,,July,,2015,grab,0-4,0.171321615434122,8.9198,0.813743218806477,2,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Woodland Beach,WB-L,DE,Delaware River,LOC,39.33074,-75.4688,WB LOC,,July,,2015,grab,0-4,0.142015851204804,8.7148,0.835654596100261,2,,,,,,,,,,,Superfund Sediment 2015 ALL-17May2018
+Jefferson Patterson,JP-H,MD,Chesapeake,HOC,38.38972,-76.5069,,,July,,2013,core,0-2,0.02146313,3.02,2.27,1,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-H,MD,Chesapeake,HOC,38.38972,-76.5069,,,July,,2013,core,2-4,0.006117995,1.45,0.84,0,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-H,MD,Chesapeake,HOC,38.38972,-76.5069,,,July,,2013,core,4-6,0.00320944,1.19,1.28,0,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-H,MD,Chesapeake,HOC,38.38972,-76.5069,,,July,,2013,core,6-8,0.0060177,2.52,1.60,0,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-H,MD,Chesapeake,HOC,38.38972,-76.5069,,,July,,2013,core,8-10,0.00441298,1.88,0.43,0,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-H,MD,Chesapeake,HOC,38.38972,-76.5069,,,July,,2013,core,0-2,0.02427139,2.27,4.36,1,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-H,MD,Chesapeake,HOC,38.38972,-76.5069,,,July,,2013,core,2-4,0.012135695,1.02,1.74,1,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-H,MD,Chesapeake,HOC,38.38972,-76.5069,,,July,,2013,core,4-6,0.00300885,1.08,1.10,0,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-H,MD,Chesapeake,HOC,38.38972,-76.5069,,,July,,2013,core,6-8,0.00060177,1.28,1.25,0,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-H,MD,Chesapeake,HOC,38.38972,-76.5069,,,July,,2013,core,8-10,0.00421239,1.39,0.85,0,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-L,MD,Chesapeake,LOC,38.39,-76.5065,,,July,,2013,core,0-2,0.03289676,0.98,0.99,3,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-L,MD,Chesapeake,LOC,38.39,-76.5065,,,July,,2013,core,2-4,0.01143363,0.89,0.79,1,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-L,MD,Chesapeake,LOC,38.39,-76.5065,,,July,,2013,core,4-6,0.0100295,1.03,0.74,1,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-L,MD,Chesapeake,LOC,38.39,-76.5065,,,July,,2013,core,6-8,0.0100295,0.86,0.79,1,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-L,MD,Chesapeake,LOC,38.39,-76.5065,,,July,,2013,core,8-10,0.00842478,1.01,1.06,1,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-L,MD,Chesapeake,LOC,38.39,-76.5065,,,July,,2013,core,0-2,0.01444248,0.58,0.75,2,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-L,MD,Chesapeake,LOC,38.39,-76.5065,,,July,,2013,core,2-4,0.00902655,0.96,0.92,1,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-L,MD,Chesapeake,LOC,38.39,-76.5065,,,July,,2013,core,4-6,0.01043068,0.65,0.97,2,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-L,MD,Chesapeake,LOC,38.39,-76.5065,,,July,,2013,core,6-8,0.01243658,0.79,1.06,2,,,,,,,,,,,OHH2013_SummTab-working
+Jefferson Patterson,JP-L,MD,Chesapeake,LOC,38.39,-76.5065,,,July,,2013,core,8-10,0.00762242,0.64,0.58,1,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-H,MD,Chesapeake,HOC,38.53542,-76.526,,,July,,2013,core,0-2,0.46576998,53.03,11.86,1,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-H,MD,Chesapeake,HOC,38.53542,-76.526,,,July,,2013,core,2-4,0.27561066,49.32,11.61,1,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-H,MD,Chesapeake,HOC,38.53542,-76.526,,,July,,2013,core,4-6,0.2748083,42.96,10.33,1,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-H,MD,Chesapeake,HOC,38.53542,-76.526,,,July,,2013,core,6-8,0.02567552,52.26,14.67,0,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-H,MD,Chesapeake,HOC,38.53542,-76.526,,,July,,2013,core,8-10,0.01845428,58.35,13.41,0,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-H,MD,Chesapeake,HOC,38.53542,-76.526,,,July,,2013,core,0-2,0.38934519,36.78,12.61,1,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-H,MD,Chesapeake,HOC,38.53542,-76.526,,,July,,2013,core,2-4,0.22446021,53.11,12.74,0,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-H,MD,Chesapeake,HOC,38.53542,-76.526,,,July,,2013,core,4-6,0.048843665,56.79,13.71,0,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-H,MD,Chesapeake,HOC,38.53542,-76.526,,,July,,2013,core,6-8,0.23228322,53.78,10.94,0,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-H,MD,Chesapeake,HOC,38.53542,-76.526,,,July,,2013,core,8-10,0.18614752,39.60,10.41,0,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-L,MD,Chesapeake,LOC,38.53622,-76.5175,,,July,,2013,core,0-2,0.013539825,0.08,0.75,17,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-L,MD,Chesapeake,LOC,38.53622,-76.5175,,,July,,2013,core,2-4,0.014743365,3.07,0.76,0,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-L,MD,Chesapeake,LOC,38.53622,-76.5175,,,July,,2013,core,4-6,0.01825369,2.23,0.77,1,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-L,MD,Chesapeake,LOC,38.53622,-76.5175,,,July,,2013,core,6-8,0.02146313,2.32,0.88,1,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-L,MD,Chesapeake,LOC,38.53622,-76.5175,,,July,,2013,core,8-10,0.01223599,0.82,0.78,1,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-L,MD,Chesapeake,LOC,38.53622,-76.5175,,,July,,2013,core,0-2,0.00501475,0.79,0.67,1,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-L,MD,Chesapeake,LOC,38.53622,-76.5175,,,July,,2013,core,2-4,0.00842478,0.99,0.65,1,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-L,MD,Chesapeake,LOC,38.53622,-76.5175,,,July,,2013,core,4-6,0.01143363,0.785,0.64,1,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-L,MD,Chesapeake,LOC,38.53622,-76.5175,,,July,,2013,core,6-8,0.01143363,1.18,0.67,1,,,,,,,,,,,OHH2013_SummTab-working
+Parker's Creek,PC-L,MD,Chesapeake,LOC,38.53622,-76.5175,,,July,,2013,core,8-10,0.00982891,0.07,0.59,14,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-H,ME,Mt. Desert Island,HOC,44.25353,-68.3413,,,September,,2013,core,0-2,0.349728665,173.7,29.90,0,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-H,ME,Mt. Desert Island,HOC,44.25353,-68.3413,,,September,,2013,core,2-4,0.055864315,179.0,28.50,0,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-H,ME,Mt. Desert Island,HOC,44.25353,-68.3413,,,September,,2013,core,4-6,0.02627729,179.6,27.99,0,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-H,ME,Mt. Desert Island,HOC,44.25353,-68.3413,,,September,,2013,core,6-8,0.01083186,193.2,27.56,0,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-H,ME,Mt. Desert Island,HOC,44.25353,-68.3413,,,September,,2013,core,8-10,0.02507375,187.0,26.66,0,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-H,ME,Mt. Desert Island,HOC,44.25353,-68.3413,,,September,,2013,core,0-2,0.25515048,109.16,24.09,0,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-H,ME,Mt. Desert Island,HOC,44.25353,-68.3413,,,September,,2013,core,2-4,0.10250149,97.60,22.67,0,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-H,ME,Mt. Desert Island,HOC,44.25353,-68.3413,,,September,,2013,core,4-6,0.04332744,94.40,21.45,0,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-H,ME,Mt. Desert Island,HOC,44.25353,-68.3413,,,September,,2013,core,6-8,0.050648975,79.27,20.07,0,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-H,ME,Mt. Desert Island,HOC,44.25353,-68.3413,,,September,,2013,core,8-10,0.04994691,63.87,19.81,0,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-L,ME,Mt. Desert Island,LOC,44.25297,-68.34876,,,September,,2013,core,0-2,0.85952815,99.36,11.95,1,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-L,ME,Mt. Desert Island,LOC,44.25297,-68.34876,,,September,,2013,core,2-4,0.13058409,104.66,11.67,0,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-L,ME,Mt. Desert Island,LOC,44.25297,-68.34876,,,September,,2013,core,4-6,0.118648985,107.88,11.31,0,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-L,ME,Mt. Desert Island,LOC,44.25297,-68.34876,,,September,,2013,core,6-8,0.0982891,115.47,11.09,0,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-L,ME,Mt. Desert Island,LOC,44.25297,-68.34876,,,September,,2013,core,8-10,0.07100886,120.96,11.68,0,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-L,ME,Mt. Desert Island,LOC,44.25297,-68.34876,,,September,,2013,core,0-2,0.64549862,102.31,11.10,1,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-L,ME,Mt. Desert Island,LOC,44.25297,-68.34876,,,September,,2013,core,2-4,0.118047215,104.54,8.88,0,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-L,ME,Mt. Desert Island,LOC,44.25297,-68.34876,,,September,,2013,core,4-6,0.08745724,136.11,10.08,0,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-L,ME,Mt. Desert Island,LOC,44.25297,-68.34876,,,September,,2013,core,6-8,0.04974632,142.26,9.71,0,,,,,,,,,,,OHH2013_SummTab-working
+Bass Harbor,BH-L,ME,Mt. Desert Island,LOC,44.25297,-68.34876,,,September,,2013,core,8-10,0.02246608,180.63,12.77,0,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-H,ME,Mt. Desert Island,HOC,44.4238,-68.32529,,,September,,2013,core,0-2,1.6128673751613,1.0,16.71,160,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-H,ME,Mt. Desert Island,HOC,44.4238,-68.32529,,,September,,2013,core,2-4,0.285981051007769,65.3,13.27,0,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-H,ME,Mt. Desert Island,HOC,44.4238,-68.32529,,,September,,2013,core,4-6,0.037109226016643,47.8,7.77,0,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-H,ME,Mt. Desert Island,HOC,44.4238,-68.32529,,,September,,2013,core,6-8,0.021660294726001,34.4,7.20,0,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-H,ME,Mt. Desert Island,HOC,44.4238,-68.32529,,,September,,2013,core,8-10,0.01628632895774,27.3,6.30,0,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-H,ME,Mt. Desert Island,HOC,44.4238,-68.32529,,,September,,2013,core,0-2,2.6013105894468,84.15,21.90,3,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-H,ME,Mt. Desert Island,HOC,44.4238,-68.32529,,,September,,2013,core,2-4,1.84456334571839,89.95,21.20,2,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-H,ME,Mt. Desert Island,HOC,44.4238,-68.32529,,,September,,2013,core,4-6,0.396531750544002,96.91,20.33,0,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-H,ME,Mt. Desert Island,HOC,44.4238,-68.32529,,,September,,2013,core,6-8,0.09347980356188,87.58,19.15,0,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-H,ME,Mt. Desert Island,HOC,44.4238,-68.32529,,,September,,2013,core,8-10,0.073137470413106,80.54,17.38,0,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-L,ME,Mt. Desert Island,LOC,44.4258,-68.33067,,,September,,2013,core,0-2,0.828902169276707,2.45,9.11,34,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-L,ME,Mt. Desert Island,LOC,44.4258,-68.33067,,,September,,2013,core,2-4,0.206077463317466,38.62,8.49,1,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-L,ME,Mt. Desert Island,LOC,44.4258,-68.33067,,,September,,2013,core,4-6,0.087739055169189,40.72,8.24,0,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-L,ME,Mt. Desert Island,LOC,44.4258,-68.33067,,,September,,2013,core,6-8,0.081076313599835,42.40,9.10,0,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-L,ME,Mt. Desert Island,LOC,44.4258,-68.33067,,,September,,2013,core,8-10,0.051801950690111,37.61,7.38,0,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-L,ME,Mt. Desert Island,LOC,44.4258,-68.33067,,,September,,2013,core,0-2,0.544543139997093,38.80,9.63,1,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-L,ME,Mt. Desert Island,LOC,44.4258,-68.33067,,,September,,2013,core,2-4,0.495211009921546,40.51,9.25,1,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-L,ME,Mt. Desert Island,LOC,44.4258,-68.33067,,,September,,2013,core,4-6,0.183095575538789,38.68,8.15,0,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-L,ME,Mt. Desert Island,LOC,44.4258,-68.33067,,,September,,2013,core,6-8,0.03208651564394,37.86,8.17,0,,,,,,,,,,,OHH2013_SummTab-working
+Northeast Creek,NEC-L,ME,Mt. Desert Island,LOC,44.4258,-68.33067,,,September,,2013,core,8-10,0.021488748834992,41.26,8.46,0,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,,,August,,2013,core,0-2,0.15505607,56.92,13.17,0,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,,,August,,2013,core,2-4,0.10992332,51.63,6.56,0,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,,,August,,2013,core,4-6,0.09086727,58.50,6.53,0,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,,,August,,2013,core,6-8,0.07000591,60.83,7.11,0,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,,,August,,2013,core,8-10,0.07341594,75.80,6.94,0,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,,,August,,2013,core,0-2,0.06077877,78.86,21.39,0,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,,,August,,2013,core,2-4,0.05054868,75.04,15.16,0,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,,,August,,2013,core,4-6,0.04934514,60.61,11.19,0,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,,,August,,2013,core,6-8,0.04232449,44.36,8.91,0,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-H,CT,Long Island Sound,HOC,41.34012,-71.87455,,,August,,2013,core,8-10,0.02507375,47.57,10.37,0,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,,,August,,2013,core,0-2,0.21282599,9.98,1.62,2,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,,,August,,2013,core,2-4,0.111628335,9.21,1.06,1,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,,,August,,2013,core,4-6,0.09528025,8.88,0.95,1,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,,,August,,2013,core,6-8,0.0240708,14.33,1.15,0,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,,,August,,2013,core,8-10,0.080236,15.05,1.06,1,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,,,August,,2013,core,0-2,0.413763475,4.11,1.01,10,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,,,August,,2013,core,2-4,0.39209255,3.89,0.87,10,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,,,August,,2013,core,4-6,0.4293867,4.26,0.83,10,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,,,August,,2013,core,6-8,0.46668085,4.63,0.96,10,,,,,,,,,,,OHH2013_SummTab-working
+Barn Island,BI-L,CT,Long Island Sound,LOC,41.33838,-71.87983,,,August,,2013,core,8-10,0.564452,5.60,0.76,10,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,,,August,,2013,core,0-2,0.07841850416951,131.32,12.61,0,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,,,August,,2013,core,2-4,0.083758717917239,151.31,13.15,0,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,,,August,,2013,core,4-6,0.019674239385803,153.69,11.14,0,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,,,August,,2013,core,6-8,0.041733019623202,232.52,5.80,0,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,,,August,,2013,core,8-10,0.041183320596223,137.35,4.64,0,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,,,August,,2013,core,0-2,0.078795945675018,71.669,7.35,0,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,,,August,,2013,core,2-4,0.034879551108388,74.963,5.29,0,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,,,August,,2013,core,4-6,0.018720549978641,51.604,2.82,0,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,,,August,,2013,core,6-8,0.032280809428383,39.4,1.90,0,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-H,CT,Long Island Sound,HOC,41.30648,-72.11813,,,August,,2013,core,8-10,0.01162887335498,55.638,2.09,0,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,,,August,,2013,core,0-2,0.317640021452445,29.127,1.81,1,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,,,August,,2013,core,2-4,0.104821819328076,16.767,1.11,1,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,,,August,,2013,core,4-6,0.120330804540494,13.887,0.77,1,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,,,August,,2013,core,6-8,0.185146215638917,24.267,1.07,1,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,,,August,,2013,core,8-10,0.114650557755929,15.659,0.97,1,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,,,August,,2013,core,0-2,0.16067259,36.265,8.05,0,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,,,August,,2013,core,2-4,0.049244845,33.778,5.58,0,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,,,August,,2013,core,4-6,0.02025959,45.089,4.41,0,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,,,August,,2013,core,6-8,0.01484366,69.464,3.26,0,,,,,,,,,,,OHH2013_SummTab-working
+Goshen,GC-L,CT,Long Island Sound,LOC,41.30193,-72.11815,,,August,,2013,core,8-10,0.01243658,55.044,2.78,0,,,,,,,,,,,OHH2013_SummTab-working
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,PTP 1-0-2,,July,,2012,core,0-2,1.89317229386935,267.52,8.44,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,1-2-4,,July,,2012,core,2-4,1.70580569185213,208.92,7.33,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,1-4-6,,July,,2012,core,4-6,1.27939602202509,201.55,7.07,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,1-6-8,,July,,2012,core,6-8,1.25712692871947,248.68,7.35,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,1-8-10,,July,,2012,core,8-10,1.4334068702277,229.11,9.23,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,PTP 2-0-2,,July,,2012,core,0-2,1.5584680561374,221.43,7.76,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,2-2-4,,July,,2012,core,2-4,1.10617682771154,215.18,7.15,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,2-4-6,,July,,2012,core,4-6,1.76034851949088,207.45,6.77,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,2-6-8,,July,,2012,core,6-8,1.63332813384882,295.66,9.82,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,2-8-10,,July,,2012,core,8-10,0.85594732186358,305.42,10.86,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,TC 1-0-2,,July,,2012,core,0-2,0.495353916853891,114.07,4.88,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,1-2-4,,July,,2012,core,2-4,0.706247535644159,191.50,7.25,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,1-4-6,,July,,2012,core,4-6,1.03914509992156,189.82,8.40,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,1-6-8,,July,,2012,core,6-8,0.879397323818637,245.64,8.30,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,1-8-10,,July,,2012,core,8-10,0.004822882405385,186.68,7.26,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,TC 2-0-2,,July,,2012,core,0-2,0.153935184894138,107.94,1.96,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,2-2-4,,July,,2012,core,2-4,0.135243348541541,88.33,2.05,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,2-4-6,,July,,2012,core,4-6,0.129498943041903,96.98,2.30,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,2-6-8,,July,,2012,core,6-8,0.283213300792762,173.38,3.62,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,2-8-10,,July,,2012,core,8-10,0.226818581642238,166.06,3.37,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,EGC 1-0-2,,July,,2012,core,0-2,1.53917108857835,277.23,7.56,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,1-2-4,,July,,2012,core,2-4,1.71752021034674,270.15,7.34,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,1-4-6,,July,,2012,core,4-6,0.92030471121464,254.87,6.35,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,1-6-8,,July,,2012,core,6-8,0.964712104659995,302.98,6.45,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,1-8-10,,July,,2012,core,8-10,0.832111745291451,319.70,6.98,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,EGC 2-0-2,,July,,2012,core,0-2,1.24781069235929,297.47,8.40,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,2-2-4,,July,,2012,core,2-4,1.54401046530589,256.24,7.09,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,2-4-6,,July,,2012,core,4-6,1.58118901797817,284.50,8.00,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,2-6-8,,July,,2012,core,6-8,2.15816020259144,349.74,11.88,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,2-8-10,,July,,2012,core,8-10,1.41940674712876,362.24,12.21,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,LM 1-0-2,,July,,2012,core,0-2,0.257345994516027,137.78,7.32,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,1-2-4,,July,,2012,core,2-4,0.193579178453506,178.64,7.04,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,1-4-6,,July,,2012,core,4-6,0.143339377915029,162.49,6.13,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,1-6-8,,July,,2012,core,6-8,0.141808193434192,145.84,6.72,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,1-8-10,,July,,2012,core,8-10,0.150914087325378,148.00,5.68,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,LM 2-0-2,,July,,2012,core,0-2,1.51790591649239,220.79,7.41,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,2-2-4,,July,,2012,core,2-4,1.21754629329692,194.08,7.11,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,2-4-6,,July,,2012,core,4-6,0.633981611660037,131.97,6.42,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,2-6-8,,July,,2012,core,6-8,0.131012718931689,85.64,6.76,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,2-8-10,,July,,2012,core,8-10,0.038323889505727,42.49,5.54,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,LM2 1-0-2,,July,,2012,core,0-2,1.01540116555414,247.55,5.19,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,1-2-4,,July,,2012,core,2-4,0.350153719493107,312.33,7.10,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,1-4-6,,July,,2012,core,4-6,0.233914870103918,281.11,8.56,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,1-6-8,,July,,2012,core,6-8,0.156869120538089,213.95,9.01,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,1-8-10,,July,,2012,core,8-10,0.217438760658523,250.22,9.16,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,LM2 2-0-2,,July,,2012,core,0-2,1.01327289519103,200.40,5.72,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,2-2-4,,July,,2012,core,2-4,0.945293526536533,225.61,6.99,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,2-4-6,,July,,2012,core,4-6,0.896164398312407,478.08,8.54,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,2-6-8,,July,,2012,core,6-8,0.556115049576719,400.80,9.24,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,2-8-10,,July,,2012,core,8-10,0.326889623277569,352.10,9.15,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,PL 1-0-2,,July,,2012,core,0-2,0.566460377273981,223.17,7.06,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,1-2-4,,July,,2012,core,2-4,0.368269784230597,281.71,8.23,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,1-4-6,,July,,2012,core,4-6,0.370187550932534,312.56,9.55,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,1-6-8,,July,,2012,core,6-8,0.743117491588223,461.79,9.29,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,1-8-10,,July,,2012,core,8-10,0.817301025043892,533.42,8.81,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,PL 2-0-2,,July,,2012,core,0-2,0.012194653195874,16.98,0.67,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,2-2-4,,July,,2012,core,2-4,0.017819022021906,11.88,0.57,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,2-4-6,,July,,2012,core,4-6,0.039858072974237,19.08,6.31,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,2-6-8,,July,,2012,core,6-8,0.02294194729365,28.96,13.40,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,2-8-10,,July,,2012,core,8-10,0.017464822514724,30.21,12.89,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,BW 1-0-2,,July,,2012,core,0-2,8.86644946525652,169.38,14.04,5,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,1-2-4,,July,,2012,core,2-4,9.36520512611025,321.93,20.62,3,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,1-4-6,,July,,2012,core,4-6,11.4802539154004,302.18,23.86,4,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,1-6-8,,July,,2012,core,6-8,5.20204751460695,306.20,21.08,2,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,1-8-10,,July,,2012,core,8-10,1.23845060725623,277.88,22.79,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,BW 2-0-2,,July,,2012,core,0-2,1.0549218447097,18.63,7.42,6,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,2-2-4,,July,,2012,core,2-4,0.306957071617159,18.63,2.09,2,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,2-4-6,,July,,2012,core,4-6,0.054364605615988,10.68,0.76,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,2-6-8,,July,,2012,core,6-8,0.125522069939525,18.27,1.14,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,2-8-10,,July,,2012,core,8-10,0.073888856568067,13.07,0.92,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,SB 1-0-2,,July,,2012,core,0-2,5.16230635832332,92.65,10.05,6,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,1-2-4,,July,,2012,core,2-4,3.58559158673055,77.80,7.80,5,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,1-4-6,,July,,2012,core,4-6,2.93822359821299,76.77,6.93,4,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,1-6-8,,July,,2012,core,6-8,1.19743590359033,75.00,6.69,2,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,1-8-10,,July,,2012,core,8-10,0.933937478183087,81.93,7.37,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,SB 2-0-2,,July,,2012,core,0-2,1.72414061733683,37.56,6.14,5,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,2-2-4,,July,,2012,core,2-4,0.752610701734979,37.73,2.86,2,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,2-4-6,,July,,2012,core,4-6,0.293999477683646,14.16,1.21,2,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,2-6-8,,July,,2012,core,6-8,0.013798793871638,3.53,0.34,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,2-8-10,,July,,2012,core,8-10,0.044481871962205,5.92,0.43,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,FS 1-0-2,,July,,2012,core,0-2,0.525336318645697,18.73,4.24,3,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,1-2-4,,July,,2012,core,2-4,0.199775158280794,12.54,9.59,2,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,1-4-6,,July,,2012,core,4-6,0.070378428922861,16.27,15.06,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,1-6-8,,July,,2012,core,6-8,0.027503478697494,23.24,21.20,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,1-8-10,,July,,2012,core,8-10,0.03353708718572,27.61,18.12,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,FS 2-0-2,,July,,2012,core,0-2,0.057755128850746,27.52,13.50,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,2-2-4,,July,,2012,core,2-4,0.123705784163903,20.92,12.91,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,2-4-6,,July,,2012,core,4-6,0.01376456259728,28.09,16.43,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,2-6-8,,July,,2012,core,6-8,0.015055266558353,37.61,16.01,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,2-8-10,,July,,2012,core,8-10,0.009099649045317,25.19,17.72,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,NB 1-0-2,,July,,2012,core,0-2,0.230373898607598,24.67,10.84,1,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,1-2-4,,July,,2012,core,2-4,0.025302536008152,26.25,17.50,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,1-4-6,,July,,2012,core,4-6,0.003026401624695,21.68,18.08,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,1-6-8,,July,,2012,core,6-8,0.006309923040986,21.46,18.85,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,1-8-10,,July,,2012,core,8-10,0.009121806998437,22.71,21.10,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,NB 2-0-2,,July,,2012,core,0-2,0.06115434800002,,14.17,,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,2-2-4,,July,,2012,core,2-4,0.014198827777995,25.84,16.97,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,2-4-6,,July,,2012,core,4-6,0.008995160011072,23.02,18.21,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,2-6-8,,July,,2012,core,6-8,0.004570390837125,23.09,19.02,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,2-8-10,,July,,2012,core,8-10,0.007359298689569,28.59,21.99,0,,,,,,,,,,,DERiver2012_SummTab-7Feb2014
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,309.4,12.05,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,239.1,9.81,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,215.7,9.78,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,256.9,11.26,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,201.3,7.93,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,347.7,9.74,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,449.6,9.90,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,247.4,8.72,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,259.3,10.20,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,195.3,6.81,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,270.3,9.63,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,269.1,10.10,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,244.5,9.28,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,307.6,9.27,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,242.9,8.72,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,335.4,11.37,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,319.7,9.99,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Penn Treaty,PT,DE,Delaware River,,39.96545,-75.12945,,,July,,2012,grab,,,372.0,8.70,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,72.635,1.64,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,182.881,7.15,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,59.98,1.85,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,24.171,0.95,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,17.376,0.67,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,46.558,1.39,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,46.783,1.42,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,133.882,3.62,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,156.7865,4.14,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,82.935,1.53,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,24.201,1.32,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,66.014,2.16,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,31.507,1.35,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,45.447,1.67,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,147.012,13.45,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,58.408,1.40,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,169.703,2.66,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,43.341,1.36,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,43.059,0.51,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Timber Blvd,TB,DE,Delaware River,,39.88037,-75.12694,,,July,,2012,grab,,,65.167,2.53,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,258.26,8.56,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,329.235,9.18,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,310.357,9.29,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,338.125,9.64,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,226.1385,7.06,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,267.253,9.49,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,329.444,9.70,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,236.6405,7.11,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,276.754,8.08,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,268.441,8.09,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,281.313,9.02,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,323.818,11.74,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,153.456,8.40,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,319.235,10.80,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,66.653,6.55,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,278.776,8.43,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,260.353,9.38,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,287.5355,9.18,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,117.918,5.56,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Gen Chem,GC,DE,Delaware River,,39.80062,-75.43884,,,July,,2012,grab,,,257.902,8.27,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,661.122857142857,4.95,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,578.042857142857,7.23,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,339.012857142857,5.39,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,405.082857142857,4.88,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,830.022857142857,0.96,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,356.552857142857,11.04,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,579.072857142857,1.52,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,313.457142857143,6.14,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,400.972857142857,2.26,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,489.772857142857,1.14,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,410.283,10.94,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,161.0155,5.52,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,121.069,4.02,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,81.646,4.14,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,146.081,4.93,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,37.148,1.62,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,231.084,7.89,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,130.759,4.80,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,46.941,1.14,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+S. of Lukens,SL,DE,Delaware River,,39.67383,-75.5479,,,July,,2012,grab,,,125.577,1.18,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,663.316,9.67,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,614.7745,9.77,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,342.942,6.94,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,373.984,9.48,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,814.331,8.48,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,436.534,5.19,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,652.467,4.89,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,313.608,8.06,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,358.751,7.81,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,497.956,8.59,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,612.537142857143,8.53,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,416.687142857143,7.80,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,408.067142857143,6.40,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,409.667142857143,9.00,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,255.247142857143,6.05,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,496.767142857143,8.53,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,1392.45714285714,16.23,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,497.967142857143,9.33,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,1044.52714285714,6.97,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Luken's Marsh,LM,DE,Delaware River,,39.68551,-75.53755,,,July,,2012,grab,,,1965.53714285714,12.13,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,66.952,3.00,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,12.573,0.65,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,733.05,9.14,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,33.888,0.75,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,149.91,0.94,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,1117.1045,8.24,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,85.673,0.86,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,32.23,0.81,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,1451.8365,9.98,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,569.8265,12.05,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,7.14,0.33,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,15.67,0.43,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,35.88,1.19,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,812.674,11.46,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,18.45,0.88,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,15.85,0.55,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,7.355,0.39,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,48.04,1.45,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,379.92,8.16,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Pennsville Landfill,PL,DE,Delaware River,,39.63783,-75.54769,,,July,,2012,grab,,,20.1,0.64,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,14.33,2.50,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,56.946,19.57,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,25.516,8.09,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,14.098,4.52,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,38.425,1.76,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,17.705,13.49,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,19.335,2.04,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,13.09,1.45,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,14.424,1.77,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,24.384,4.35,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,341.9965,70.76,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,419.435,59.55,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,85.468,8.83,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,256.218,68.98,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,23.911,2.10,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,192.031,23.59,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,219.145,62.81,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,276.838,68.24,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,150.29,27.54,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Buttonwood,BW,DE,Delaware River,,39.45947,-75.50899,,,July,,2012,grab,,,4.479,0.48,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,109.38,9.28,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,20.625,14.88,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,1.37,0.38,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,46.47,3.60,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,105.785,8.95,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,,,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,46.15,12.99,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,,,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,26.21,10.66,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,24.72,2.59,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,2.745,0.46,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,2.57,0.38,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,226.64,13.94,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,141.06,13.60,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,2.72,0.47,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,401.55,9.97,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,17.425,12.85,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,6.425,1.28,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,78.93,5.31,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Sea Breeze,SB,DE,Delaware River,,39.31878,-75.31812,,,July,,2012,grab,,,1.45,0.31,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,86.33,9.51,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,150.94,14.97,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,12.785,0.77,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,112.56,8.33,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,149.32,14.99,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,111.7,11.26,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,154.86,15.48,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,82.105,13.54,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,165.65,15.54,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,1.96,0.39,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,2.438,0.20,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,74,6.46,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,103.55,8.54,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,1.362,0.43,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,5.025,0.68,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,33.944,3.37,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,28.682,3.71,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,4.574,0.75,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,11.907,1.48,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+Fortescue,FS,DE,Delaware River,,39.22282,-75.16595,,,July,,2012,grab,,,84.182,10.31,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,26.552,4.25,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,41.943,9.52,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,24.473,2.70,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,29.8035,13.65,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,12.403,5.19,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,29.749,20.73,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,22.564,8.35,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,24.016,11.82,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,42.645,1.15,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,10.682,0.70,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,55.71,17.40,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,37.447,11.61,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,23.712,8.53,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,19.938,3.82,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,321.203,9.69,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,63.711,9.38,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,43.053,4.98,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,135.97,11.56,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,, ,,,,,,,,,,,,DERiver2012_GrabSedment_June2015
+North Beach,NB,DE,Delaware River,,39.12737,-74.88814,,,July,,2012,grab,,,41.15,10.57,,,,,,,,,,,,
