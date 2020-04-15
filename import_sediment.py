@@ -4,24 +4,25 @@ from csv import DictReader
 from pymongo import MongoClient
 
 
-def assign_values(document, row):
-    for k, v in document.items():
+def assign_values(doc, row):
+    for k, v in doc.items():
         if isinstance(v, list):
-            break
+            for element in v:
+                assign_values(element, row)
         elif isinstance(v, dict):
             assign_values(v, row)
         else:
             if v in row:
-                document[k] = row[v]
+                doc[k] = row[v]
             else:
-                document[k] = v
+                doc[k] = v
 
 
 with open('chen_import/sediment_individual.csv', newline='') as csv_file:
     reader = DictReader(csv_file)
-    for row in reader:
+    for current_row in reader:
         document = deepcopy(constant.SEDIMENT_FIELD_MAP)
-        assign_values(document, row)
+        assign_values(document, current_row)
         print("Filled in doc: {0}".format(document))
 
 
