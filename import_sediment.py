@@ -1,11 +1,29 @@
 import constant
-from pymongo import MongoClient
+from copy import deepcopy
 from csv import DictReader
+from pymongo import MongoClient
+
+
+def assign_values(document, row):
+    for k, v in document.items():
+        if isinstance(v, list):
+            break
+        elif isinstance(v, dict):
+            assign_values(v, row)
+        else:
+            if v in row:
+                document[k] = row[v]
+            else:
+                document[k] = v
+
 
 with open('chen_import/sediment_individual.csv', newline='') as csv_file:
     reader = DictReader(csv_file)
     for row in reader:
-        print(row['site name'], row['site code'])
+        document = deepcopy(constant.SEDIMENT_FIELD_MAP)
+        assign_values(document, row)
+        print("Filled in doc: {0}".format(document))
+
 
 # client = MongoClient()
 #
