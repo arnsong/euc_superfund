@@ -22,7 +22,7 @@
             }
         },
         "average_depth": {
-            "value": "0-4",
+            "value": "2",
             "units": {
                 "id": "UO:0000015",
                 "name": "centimeter"
