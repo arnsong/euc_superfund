@@ -1,0 +1,62 @@
+{
+    "location": {
+        "site_name": "SERC Cattail",
+        "biome": {
+            "id": "ENVO:01000022",
+            "name": "marine salt marsh biome"
+        },
+        "environmental_feature": {
+            "id": "ENVO:00000054",
+            "name": "saline marsh"
+        }
+    },
+    "collection_date": "2015-09-22",
+    "sample": {
+        "sampling_type": "",
+        "sample_id": "CM15-1001",
+        "depth": {
+            "value": "0-4",
+            "units": {
+                "id": "UO:0000015",
+                "name": "centimeter"
+            }
+        },
+        "average_depth": {
+            "value": "0-4",
+            "units": {
+                "id": "UO:0000015",
+                "name": "centimeter"
+            }
+        },
+        "environmental_material": {
+            "id": "ENVO:01001004",
+            "name": "groundwater (porewater)"
+        }
+    },
+    "preparation": {
+        "method": "centrifuged sample",
+        "filter": {
+            "type": "GDX syringe w/GMF",
+            "value": 0.45,
+            "units": {
+              "id": "UO:0000070",
+              "name": "micromolal"
+            }
+        }
+    },
+    "analysis_date": "2015-11-02",
+    "compounds": [
+        {
+            "id": "CHEBI:15858",
+            "name": "bromide",
+            "value": 207,
+            "dl": 14.11,
+            "units": {
+                "id": "UO:0000070",
+                "name": "micromolal"
+            }
+        }
+    ]
+}
+
+
