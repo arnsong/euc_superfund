@@ -24,13 +24,13 @@ SEDIMENT_FIELD_MAP = {
         "depth": {
             "value": "sample depth (cm)",
             "units": {
-                "id": "",
-                "name": ""
+                "id": "UO:0000015",
+                "name": "centimeter"
             }
         },
         "environmental_material": {
-            "id": "",
-            "name": ""
+            "id": "ENVO:00002007",
+            "name": "sediment"
         },
         "compounds": [
             {
