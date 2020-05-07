@@ -31,32 +31,30 @@
         "environmental_material": {
             "id": "ENVO:01001004",
             "name": "groundwater (porewater)"
-        }
-    },
-    "preparation": {
-        "method": "centrifuged sample",
-        "filter": {
-            "type": "GDX syringe w/GMF",
-            "value": 0.45,
-            "units": {
-              "id": "UO:0000070",
-              "name": "micromolal"
+        },
+        "preparation": {
+            "method": "centrifuged sample",
+            "filter": {
+                "type": "GDX syringe w/GMF",
+                "value": 0.45,
+                "units": {
+                    "id": "UO:0000070",
+                    "name": "micromolal"
+                }
             }
-        }
-    },
-    "analysis_date": "2015-11-02",
-    "compounds": [
-        {
-            "id": "CHEBI:15858",
-            "name": "bromide",
-            "value": 207,
-            "dl": 14.11,
-            "units": {
-                "id": "UO:0000070",
-                "name": "micromolal"
+        },
+        "analysis_date": "2015-11-02",
+        "compounds": [
+            {
+                "id": "CHEBI:15858",
+                "name": "bromide",
+                "value": 207,
+                "dl": 14.11,
+                "units": {
+                    "id": "UO:0000070",
+                    "name": "micromolal"
+                }
             }
-        }
-    ]
+        ]
+    }
 }
-
-
