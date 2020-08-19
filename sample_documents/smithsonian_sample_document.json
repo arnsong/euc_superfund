@@ -29,8 +29,8 @@
             }
         },
         "environmental_material": {
-            "id": "ENVO:01001004",
-            "name": "groundwater (porewater)"
+            "id": "ENVO:00002007",
+            "name": "sediment"
         },
         "preparation": {
             "method": "centrifuged sample",

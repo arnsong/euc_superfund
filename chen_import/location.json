@@ -1,0 +1,16 @@
+{ 
+    "keys": [ "site name", 
+              "site code",
+              "state",
+              "system",
+              "subsite",
+              "latitude", 
+              "longitude" ], 
+    "tags": [ null,
+             null,
+             null,
+             null, 
+             null,
+             null, 
+             null ] 
+} 
