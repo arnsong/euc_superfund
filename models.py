@@ -75,9 +75,12 @@ class BiotaSample(Base):
 
 class Biota(Base):
     __tablename__ = 'biota'
+
+    id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
+    column_metadata = Column(JSONB, nullable=False)
     taxonomic_group = Column(String(50))
     genus = Column(String(50))
-    species = Column(String(String(50)))
+    species = Column(String(50))
     common_name = Column(String(50))
 
 
