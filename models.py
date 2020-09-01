@@ -20,6 +20,7 @@ class Location(Base):
     state = Column(String(2))
     system = Column(String(50))
     subsite = Column(String(3))
+    individual_id = Column(String(20))
     latitude = Column(Numeric(10, 5))
     longitude = Column(Numeric(10, 5))
     biome = Column(String(50))
@@ -32,7 +33,52 @@ class Sample(Base):
     id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
     column_metadata = Column(JSONB, nullable=False)
     collection_datetime = Column(DateTime)
+    sample_category = Column(String(20))
+
+
+class WaterSample(Base):
+    __tablename__ = 'water_samples'
+
+    id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
+    column_metadata = Column(JSONB, nullable=False)
+    sample_id = Column(Integer, ForeignKey("samples.id"), nullable=False)
+    tidal_cycle = Column(String(4))
+    salinity = Column(Numeric(10, 5))
+    temp = Column(Numeric(10, 5))
+    conductivity = Column(Numeric(10, 5))
+    ph = Column(Numeric(10, 5))
+
+
+class SedimentSample(Base):
+    __tablename__ = 'sediment_samples'
+
+    id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
+    column_metadata = Column(JSONB, nullable=False)
+    sample_id = Column(Integer, ForeignKey("samples.id"), nullable=False)
     sample_type = Column(String(20))
+    percent_loi = Column(Numeric(10, 5))  # Loss on ignition
+
+
+class BiotaSample(Base):
+    __tablename__ = 'biota_samples'
+
+    id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
+    column_metadata = Column(JSONB, nullable=False)
+    sample_id = Column(Integer, ForeignKey("samples.id"), nullable=False)
+    biota_id = Column(Integer, ForeignKey("biota.id"), nullable=False)
+    wet_weight = Column(Numeric(10, 5))
+    dry_weight = Column(Numeric(10, 5))
+    length = Column(Integer)
+    width = Column(Integer)
+    notes = Column(String(50))
+
+
+class Biota(Base):
+    __tablename__ = 'biota'
+    taxonomic_group = Column(String(50))
+    genus = Column(String(50))
+    species = Column(String(String(50)))
+    common_name = Column(String(50))
 
 
 class Compound(Base):
@@ -40,7 +86,7 @@ class Compound(Base):
 
     id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
     column_metadata = Column(JSONB, nullable=False)
-    name = Column(String(10))
+    name = Column(String(50))
 
 
 class SampleCompound(Base):
@@ -48,8 +94,10 @@ class SampleCompound(Base):
 
     id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
     column_metadata = Column(JSONB, nullable=False)
+    sample_id = Column(Integer, ForeignKey("samples.id"), nullable=False)
+    compound_id = Column(Integer, ForeignKey("compounds.id"), nullable=False)
     measurement = Column(Numeric(10, 5))
-    units = Column(String(10))
+    # units = Column(String(10))  # Should this be only in the metadata tags?
 
 
 Base.metadata.create_all(engine)
