@@ -10,6 +10,15 @@ engine = create_engine(
 Base = declarative_base()
 
 
+# To keep track of which center samples came from
+class Institution(Base):
+    __tablename__ = 'institutions'
+
+    id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
+    column_metadata = Column(JSONB, nullable=False)
+    name = Column(String(50))
+
+
 class Location(Base):
     __tablename__ = 'locations'
 
@@ -32,6 +41,8 @@ class Sample(Base):
 
     id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
     column_metadata = Column(JSONB, nullable=False)
+    institution_id = Column(Integer, ForeignKey("institutions.id"), nullable=False)
+    location_id = Column(Integer, ForeignKey("locations.id"), nullable=False)
     lab_sample_id = Column(String(50))
     collection_datetime = Column(DateTime)
     sample_category = Column(String(20))
@@ -93,15 +104,33 @@ class SamplePreparation(Base):
     dilution = Column(Integer)
 
 
+class ExperimentType(Base):
+    __tablename__ = 'experiment_types'
+
+    id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
+    column_metadata = Column(JSONB, nullable=False)
+    experiment_type = Column(String(50))
+
+
 class ExperimentSample(Base):
     __tablename__ = 'experiment_samples'
 
     id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
     column_metadata = Column(JSONB, nullable=False)
     sample_id = Column(Integer, ForeignKey("samples.id"), nullable=False)
+    experiment_type_id = Column(Integer, ForeignKey("experiment_types.id"), nullable=False)
     block = Column(Integer)
     runner = Column(String(50))
     length_of_exposure = Column(Integer)
+    treatment = Column(String(50))
+    treatment_class = Column(String(50))
+    treatment_number = Column(String(50))
+    plot = Column(String(50))
+    detection_limit = Column(Numeric(10, 5))
+    detection_limit_flag = Column(String(1))
+    min_depth = Column(Integer)  # Should this have a SedimentSample record instead?
+    max_depth = Column(Integer)  # Should this have a SedimentSample record instead?
+    comment = Column(Text)
 
 
 class Note(Base):
