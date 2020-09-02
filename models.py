@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String, ForeignKey, Numeric, DateTime, Text
+from sqlalchemy import Column, Integer, String, ForeignKey, Numeric, DateTime, Text, Date
 from sqlalchemy.dialects.postgresql import JSONB
 import config
 
@@ -32,6 +32,7 @@ class Sample(Base):
 
     id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
     column_metadata = Column(JSONB, nullable=False)
+    lab_sample_id = Column(String(50))
     collection_datetime = Column(DateTime)
     sample_category = Column(String(20))
     file_name = Column(String(100))
@@ -57,6 +58,9 @@ class SedimentSample(Base):
     column_metadata = Column(JSONB, nullable=False)
     sample_id = Column(Integer, ForeignKey("samples.id"), nullable=False)
     sample_type = Column(String(20))
+    min_depth = Column(Integer)
+    max_depth = Column(Integer)
+    average_depth = Column(Integer)
     percent_loi = Column(Numeric(10, 5))  # Loss on ignition
 
 
@@ -72,6 +76,32 @@ class BiotaSample(Base):
     length = Column(Integer)
     width = Column(Integer)
     notes = Column(String(50))
+
+
+class SamplePreparation(Base):
+    __tablename__ = 'sample_preparations'
+
+    id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
+    column_metadata = Column(JSONB, nullable=False)
+    sample_id = Column(Integer, ForeignKey("samples.id"), nullable=False)
+    analysis_date = Column(Date)
+    method = Column(String(50))
+    filter = Column(String(50))
+    preservation = Column(String(50))
+    detection_limit = Column(Numeric(10, 5))
+    detection_limit_flag = Column(String(1))
+    dilution = Column(Integer)
+
+
+class ExperimentSample(Base):
+    __tablename__ = 'experiment_samples'
+
+    id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
+    column_metadata = Column(JSONB, nullable=False)
+    sample_id = Column(Integer, ForeignKey("samples.id"), nullable=False)
+    block = Column(Integer)
+    runner = Column(String(50))
+    length_of_exposure = Column(Integer)
 
 
 class Note(Base):
@@ -101,6 +131,18 @@ class Compound(Base):
     name = Column(String(50))
 
 
+class CompoundAnalyticGroup(Base):
+    __tablename__ = 'compound_analytic_groups'
+
+    id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
+    column_metadata = Column(JSONB, nullable=False)
+    compound_id = Column(Integer, ForeignKey("compounds.id"), nullable=False)
+    group = Column(String(50))
+    units = Column(String(50))
+    description = Column(String(50))
+    reference = Column(String(50))
+
+
 class SampleCompound(Base):
     __tablename__ = 'sample_compounds'
 
@@ -120,7 +162,9 @@ class QualityControl(Base):
     sample_id = Column(Integer, ForeignKey("samples.id"), nullable=False)
     dorm_percent_recovery = Column(Integer)
     tort2_percent_recovery = Column(Integer)
+    id_percent_recovery = Column(Integer)
     analysis_dup_rpd = Column(Integer)
+    comment = Column(Text)
 
 
 Base.metadata.create_all(engine)
