@@ -1,13 +1,19 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String, ForeignKey, Numeric, DateTime, Text, Date
+from sqlalchemy import Column, Integer, String, ForeignKey, Numeric, DateTime, Text, Date, Boolean, Enum
 from sqlalchemy.dialects.postgresql import JSONB
 import config
+import enum
 
 engine = create_engine(
     f"postgresql+psycopg2://{config.DB_USER}:{config.DB_PASSWORD}@{config.DB_HOST}/{config.DB_NAME}", echo=True
 )
 Base = declarative_base()
+
+
+class FoodChain(enum.Enum):
+    predator = 1
+    bottom_feeder = 2
 
 
 # To keep track of which center samples came from
@@ -26,6 +32,7 @@ class Location(Base):
     column_metadata = Column(JSONB, nullable=False)
     site_name = Column(String(50))
     site_code = Column(String(5))
+    site_id = Column(String(20))
     state = Column(String(2))
     system = Column(String(50))
     subsite = Column(String(3))
@@ -34,6 +41,7 @@ class Location(Base):
     longitude = Column(Numeric(10, 5))
     biome = Column(String(50))
     environmental_feature = Column(String(50))
+    urban = Column(Boolean)
 
 
 class Sample(Base):
@@ -44,6 +52,7 @@ class Sample(Base):
     institution_id = Column(Integer, ForeignKey("institutions.id"), nullable=False)
     location_id = Column(Integer, ForeignKey("locations.id"), nullable=False)
     lab_sample_id = Column(String(50))
+    specimen_id = Column(String(10))
     collection_datetime = Column(DateTime)
     sample_category = Column(String(20))
     file_name = Column(String(100))
@@ -82,10 +91,13 @@ class BiotaSample(Base):
     column_metadata = Column(JSONB, nullable=False)
     sample_id = Column(Integer, ForeignKey("samples.id"), nullable=False)
     biota_id = Column(Integer, ForeignKey("biota.id"), nullable=False)
+    tissue_type = Column(String(10))
     wet_weight = Column(Numeric(10, 5))
     dry_weight = Column(Numeric(10, 5))
     length = Column(Integer)
     width = Column(Integer)
+    age = Column(Integer)
+    percent_lipids = Column(Numeric(10, 5))
     notes = Column(String(50))
 
 
@@ -148,8 +160,12 @@ class Biota(Base):
     column_metadata = Column(JSONB, nullable=False)
     taxonomic_group = Column(String(50))
     genus = Column(String(50))
+    family = Column(String(50))
     species = Column(String(50))
+    scientific_name = Column(String(50))
     common_name = Column(String(50))
+    food_chain = Column(Enum(FoodChain))
+    sort = Column(Integer)
 
 
 class Compound(Base):
@@ -180,6 +196,7 @@ class SampleCompound(Base):
     sample_id = Column(Integer, ForeignKey("samples.id"), nullable=False)
     compound_id = Column(Integer, ForeignKey("compounds.id"), nullable=False)
     measurement = Column(Numeric(10, 5))
+    qa_flag = Column(String(10))
     # units = Column(String(10))  # Should this be only in the metadata tags?
 
 
