@@ -21,7 +21,6 @@ class Institution(Base):
     __tablename__ = 'institutions'
 
     id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
-    column_metadata = Column(JSONB, nullable=False)
     name = Column(String(50))
 
 
