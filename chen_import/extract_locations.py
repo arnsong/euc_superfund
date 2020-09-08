@@ -1,13 +1,13 @@
-from euc_import import Dataset
+from ...euc_import import Dataset
 import pandas as pd
 
-sediment = Dataset("chen_import", "sediment_individual.csv")
+sediment = Dataset("", "sediment_individual.csv")
 sediment_locations = sediment.get_locations()
 
-biota = Dataset("chen_import", "biota_individual.csv")
+biota = Dataset("", "biota_individual.csv")
 biota_locations = biota.get_locations()
 
-water = Dataset("chen_import", "water_individual.csv")
+water = Dataset("", "water_individual.csv")
 water_locations = water.get_locations()
 
 unique_locations = []
