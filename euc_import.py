@@ -63,25 +63,25 @@ class Dataset:
             else:
                 location_array.append(location)
 
-        # if to_file:
-        #
-        #     for location in location_array:
-        #         location['biome_id'] = None
-        #         location['biome_name'] = None
-        #         location['environmental_feature_id'] = None
-        #         location['environmental_feature_name'] = None
-        #
-        #     columns = location_array[0].keys()
-        #
-        #     df = pd.DataFrame(columns=columns)
-        #     for location in location_array:
-        #         data = []
-        #
-        #         for key in location.keys():
-        #             data.append(location[key])
-        #
-        #         df = df.append(pd.DataFrame(columns=columns, data=[data]), ignore_index=True)
-        #     df.to_csv(to_file, index=False)
+        if to_file:
+
+            for location in location_array:
+                location['biome_id'] = None
+                location['biome_name'] = None
+                location['environmental_feature_id'] = None
+                location['environmental_feature_name'] = None
+
+            columns = location_array[0].keys()
+
+            df = pd.DataFrame(columns=columns)
+            for location in location_array:
+                data = []
+
+                for key in location.keys():
+                    data.append(location[key])
+
+                df = df.append(pd.DataFrame(columns=columns, data=[data]), ignore_index=True)
+            df.to_csv(to_file, index=False)
 
         return location_array
 

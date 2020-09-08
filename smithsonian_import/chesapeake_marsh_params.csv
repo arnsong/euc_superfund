@@ -1,0 +1,91 @@
+PARAMETER,ANALYTICAL GROUP,UNITS,DESCRIPTION,REFERENCE
+aCDOM280,Organics,"A, m-1",UV Absorbance @ 280 nm per unit DOC,"Helms et al, Limnol. Oceanogr., 53(3), 2008, 955–973"
+aCDOM440,Organics,"A, m-1",something about CDOM,"Helms et al, Limnol. Oceanogr., 53(3), 2008, 955–969"
+AVS,AVS CRS,µmoles/g,Acid Volatile Sulfide,EPA 821R  (draft)?
+AVS wet dry,AVS CRS,g wet/g dry,Wet/dry weight ratio associated with AVS CRS sample,
+Carbon Black,Carbon Black,mg/g,Carbon black (charcoal etc) in sediment,
+CRS,AVS CRS,µmoles/g,Chromium Reducible Sulfide,EPA 821R  (draft)?
+DOC,Organics,mg C/L,Dissolved Organic Carbon,"EPA 415.1, EPA 9060A, ASTM-D2575"
+Dry Bulk Density,Bulk solid,g/cc,Dry Bulk Density,
+Ext Fe 2+,Ext Fe,µmoles/g,Extractable aqueous ferrous ion concentration,Standard Methods
+Ext Fe 3+,Ext Fe,µmoles/g,Extractable aqueous ferric ion concentration,Standard Methods
+F-Al,F-OES Elements,mg/L,Aqueous aluminum concentration,EPA 200.7
+F-B,F-OES Elements,mg/L,Aqueous boron concentration,EPA 200.7
+F-Ba,F-OES Elements,mg/L,Aqueous calcium concentration,EPA 200.7
+F-Ca,F-OES Elements,mg/L,Aqueous calcium concentration,EPA 200.7
+F-Fe,F-OES Elements,mg/L,Aqueous iron concentration,EPA 200.7
+F-K,F-OES Elements,mg/L,Aqueous potassium concentration,EPA 200.7
+F-Mg,F-OES Elements,mg/L,Aqueous magnesium concentration,EPA 200.7
+F-Mn,F-OES Elements,mg/L,Aqueous manganese concentration,EPA 200.7
+F-Na,F-OES Elements,mg/L,Aqueous sodium concentration,EPA 200.7
+F-NH4,Nutrients,µM,Ammonium concentration,EPA 350.2
+F-NO2,Nutrients,µM,Nitrite concentration,
+F-NO2NO3,Nutrients,µM,Nitrite+Nitrate concentration,
+F-P,F-OES Elements,mg/L,Aqueous phosphorus concentration,EPA 200.7
+F-PO4,Nutrients,µM,ortho-phosphate concentration,EPA 365.1
+F-S,F-OES Elements,mg/L,Aqueous sulfur concentration,EPA 200.7
+F-Si,F-OES Elements,mg/L,Aqueous silicon concentration,EPA 200.15
+F-Sr,F-OES Elements,mg/L,Aqueous strontium concentration,EPA 200.7
+FMeHg,FMeHg,ng/L,Filterable Methylmercury concentration,"EPA 1630 (Draft), Bloom, Horvat"
+FMeHg,FMeHg,ng/L,Filterable Methylmercury concentration,"EPA 1630 (Draft), Bloom, Horvat"
+FTHg ,FTHg,ng/L,Filterable total mercury concentration,"EPA 1631 Gill, Bloom"
+FTHg ,FTHg,ng/L,Filterable total mercury concentration,"EPA 1631 Gill, Bloom"
+IC-Br,Anions,µM,Aqueous bromide ion,EPA 300.0A
+IC-Cl,Anions,mM,Aqueous chloride ion,EPA 300.0A
+IC-F,Anions,µM,Aqueous fluoride ion,EPA 300.0A
+IC-NO2,Anions,µM,Aqueous nitrite ion,EPA 300.0A
+IC-NO3,Anions,µM,Aqueous nitrate ion,EPA 300.0A
+IC-PO4,Anions,µM,Aqueous phosphate ion,EPA 300.0A
+IC-SO4,Anions,µM,Aqueous sulfate ion,EPA 300.0A
+k-Dry Bulk D,kMeth,g/cc,Dry bulk density in Kmeth sample,
+k-LOI,kMeth,percent,Loss on ignition in Kmeth sample,
+k-MeHg,kMeth,ng/g,Methylmercury in kMeth sample,"EPA 1630 (Draft), Bloom, Horvat"
+k-MeHg-XS201,kMeth,ng/g,Excess MeHg in Methylation sample,"EPA 1630 (Draft), Bloom, Horvat"
+k-poros,kMeth,ml/cm3,Porosity in kMeth sample,
+k-THg,kMeth,ng/g,Total mercury in solids in Kmeth sample,"EPA 1631 Gill, Bloom"
+k-THg-XS201,kMeth,ng/g,Excess MeHg in Methylation sample,"EPA 1630 (Draft), Bloom, Horvat"
+k-Wet Bulk D,kMeth,gww/cc,Wet Bulk density in Kmeth sample,
+k-wet dry,kMeth,g wet/g dry,Wet dry ratio in Kmeth sample,
+LOI,Bulk solid,%,Loss on ignition,
+MeHg-solid,Bulk solid,ng/g,Methyl mercury in solid sample,"EPA 1630 (Draft), Bloom, Horvat"
+P-Al,P-OES Elements,mg/g,Particulate aluminum concentration,
+P-B,P-OES Elements,mg/g,Particulate boron concentration,
+P-Ba,P-OES Elements,mg/g,Particulate calcium concentration,
+P-Ca,P-OES Elements,mg/g,Particulate calcium concentration,
+P-Fe,P-OES Elements,mg/g,Particulate iron concentration,
+P-K,P-OES Elements,mg/g,Particulate potassium concentration,
+P-Mg,P-OES Elements,mg/g,Particulate magnesium concentration,
+P-Mn,P-OES Elements,mg/g,Particulate manganese concentration,
+P-Na,P-OES Elements,mg/g,Particulate sodium concentration,
+P-P,P-OES Elements,mg/g,Particulate phosphorus concentration,
+P-S,P-OES Elements,mg/g,Particulate sulfur concentration,
+P-Si,P-OES Elements,mg/g,Particulate silicon concentration,
+P-Sr,P-OES Elements,mg/g,Particulate strontium concentration,
+pH,pH,pH,pH,
+pMeHg,pMeHg,ng/g,Concentration of methylHg in suspended Sediments,
+Porosity,Bulk solid,ml/cm3,Porosity,
+pTHg,pTHg,ng/g,Concentration of Hg in suspended Sediments,
+S-R,Organics,unitless,Ratio:  S(275-295)/S(350-400) ,"Helms et al, Limnol. Oceanogr., 53(3), 2008, 955–974"
+S275-295,Organics,"Slope, nm-1",Slope of DOC absorbance from 275-295 nM,"Helms et al, Limnol. Oceanogr., 53(3), 2008, 955–972"
+S300-700,Organics,"Slope, nm-1",Slope of DOC absorbance from 290-750 nM,"Helms et al, Limnol. Oceanogr., 53(3), 2008, 955–971"
+S350-400,Organics,"Slope, nm-1",Slope of DOC absorbance from 350-400 nM,"Helms et al, Limnol. Oceanogr., 53(3), 2008, 955–970"
+Salinity,Salinity,psu,Salinity,
+Solid-Al,Bulk solid,mg/g,Aluminum in solids,EPA method 200.7
+Solid-Ca,Bulk solid,mg/g,Calcium in solids,EPA method 200.8
+Solid-Fe,Bulk solid,mg/g,Iron in Solids,EPA method 200.9
+Solid-K,Bulk solid,mg/g,Potassium in solids,EPA method 200.9
+Solid-Mg,Bulk solid,mg/g,Magnesium in solids,EPA method 200.9
+Solid-Mn,Bulk solid,mg/g,Manganese in solids,EPA method 200.9
+Solid-Na,Bulk solid,mg/g,Sodium in solids,EPA method 200.9
+Solid-P,Bulk solid,mg/g,Phosphorus in solids,EPA method 200.9
+Solid-S,Bulk solid,mg/g,Total S in solids,
+Solid-Si,Bulk solid,mg/g,Total Si in solids,
+Specific Cond.,Specific Conductivity,µS,Specific Conductivity,
+SPM,SPM,mg/L,Total Suspended Solids,
+Sulfide,Sulfide,µM,Aqueous sulfide ion concentration,
+Temperature,Temperature,oC,Temperature of surface sediments (1-5 cm),
+THg-solid,Bulk solid,ng/g,Total mercury in solid sample,"EPA 1631 Gill, Bloom"
+Tissue-MeHg,Tissue-THg/MeHg,ng/gww,methyl Hg in tissues,
+Tissue-THg,Tissue-THg/MeHg,ng/gww,Total Hg in tissues,
+Wet Bulk Density,Bulk solid,gww/cc,Wet Bulk Density,
+Wet/Dry Ratio,Bulk solid,g wet/g dry,Wet to Dry weight ratio,
