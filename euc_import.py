@@ -7,10 +7,12 @@ class Dataset:
     def __init__(self, path, dataset_file="data.csv",
                  location_keyfile="location.json",
                  sample_keyfile="sample.json",
-                 metadata_keyfile="metadata.json"):
+                 metadata_keyfile="metadata.json",
+                 mapped_columns={}):
 
         # Initialize data object
         self.data = {'location': [], 'sample': [], 'metadata': []}
+        self.mapped_columns = mapped_columns
 
         # Load the mappings to columns
         self.keys = {}
@@ -47,8 +49,13 @@ class Dataset:
             for dataframe_col in dataframe.columns:
 
                 for section_key in self.keys.keys():
+                    if section_key in self.mapped_columns and dataframe_col in self.mapped_columns[section_key]:
+                        mapped_col = self.mapped_columns[section_key][dataframe_col]
+                    else:
+                        mapped_col = dataframe_col
+
                     if dataframe_col in self.keys[section_key]['keys']:
-                        data[section_key][dataframe_col] = row[dataframe_col]
+                        data[section_key][mapped_col] = row[dataframe_col]
 
             for section_key in self.keys.keys():
                 self.data[section_key].append(data[section_key])

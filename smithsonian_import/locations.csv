@@ -1,4 +1,4 @@
-SITE,biome_id,biome_name,environmental_feature_id,environmental_feature_name
+site name,biome_id,biome_name,environmental_feature_id,environmental_feature_name
 SERC Cattail,,,,
 SERC Phrag,,,,
 Jug Bay Marsh,,,,
@@ -8,3 +8,7 @@ DI Blank,,,,
 Elms Marsh,,,,
 SERC Spartina,,,,
 SERC Mudflat,,,,
+W21-UM-Central-B,,,,
+W21-UM-West-A,,,,
+Field Blanks,,,,
+Amendments,,,,

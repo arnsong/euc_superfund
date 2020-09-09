@@ -18,7 +18,7 @@ with open('../chen_import/location.json') as f:
 for idx, row in dataframe.iterrows():
     column_metadata = copy(metadata)
     new_location = m.Location(
-        site_name=nan_to_empty(row['SITE']),
+        site_name=nan_to_empty(row['site name']),
         column_metadata=column_metadata
     )
     session.add(new_location)
