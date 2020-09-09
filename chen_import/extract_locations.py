@@ -1,4 +1,4 @@
-from ...euc_import import Dataset
+from euc_import import Dataset
 import pandas as pd
 
 sediment = Dataset("", "sediment_individual.csv")

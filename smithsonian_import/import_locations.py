@@ -10,9 +10,7 @@ from helpers import nan_to_empty
 Session = sessionmaker(bind=m.engine)
 session = Session()
 
-path = config.PATH_TO_SMITHSONIAN_LOCATIONS
-
-dataframe = pd.read_csv(path)
+dataframe = pd.read_csv('locations.csv')
 
 with open('../chen_import/location.json') as f:
     metadata = json.load(f)

@@ -14,12 +14,13 @@ class Dataset:
 
         # Load the mappings to columns
         self.keys = {}
-        self.load_keys(path + '/' + location_keyfile, 
-                       path + '/' + sample_keyfile,
-                       path + '/' + metadata_keyfile)
+        path_prepend = path + '/' if path else path
+        self.load_keys(path_prepend + location_keyfile,
+                       path_prepend + sample_keyfile,
+                       path_prepend + metadata_keyfile)
 
         # Load the data from csv file and store as a data object
-        self.read_csv(path + '/' + dataset_file)
+        self.read_csv(path_prepend + dataset_file)
 
     def load_keys(self, location_keyfile=None, sample_keyfile=None, metadata_keyfile=None):
 
