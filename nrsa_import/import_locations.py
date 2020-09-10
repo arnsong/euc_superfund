@@ -18,7 +18,10 @@ for idx, row in dataframe.iterrows():
     column_metadata = copy(metadata)
     new_location = m.Location(
         site_name=nan_to_empty(row['site name']),
-        site_code=nan_to_empty(row['site code']),
+        latitude=row['latitude'],
+        longitude=row['longitude'],
+        urban=(row['urban'] == 'Urban'),
+        state=nan_to_empty(row['state']),
         column_metadata=column_metadata
     )
     session.add(new_location)

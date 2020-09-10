@@ -12,7 +12,7 @@ session = Session()
 
 dataframe = pd.read_csv('locations.csv')
 
-with open('location.json') as f:
+with open('../location.json') as f:
     metadata = json.load(f)
 
 for idx, row in dataframe.iterrows():

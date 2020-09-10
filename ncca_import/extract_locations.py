@@ -7,5 +7,5 @@ mapped_columns = {
     }
 }
 
-ncca = Dataset("", "ncca.csv", mapped_columns=mapped_columns)
+ncca = Dataset("", "ncca.csv", mapped_columns=mapped_columns, location_keyfile='../location.json')
 ncca.get_locations(to_file="locations.csv")

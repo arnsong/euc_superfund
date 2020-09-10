@@ -54,7 +54,7 @@ class Dataset:
                     else:
                         mapped_col = dataframe_col
 
-                    if dataframe_col in self.keys[section_key]['keys']:
+                    if mapped_col in self.keys[section_key]['keys']:
                         data[section_key][mapped_col] = row[dataframe_col]
 
             for section_key in self.keys.keys():
