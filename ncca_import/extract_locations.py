@@ -2,8 +2,8 @@ from euc_import import Dataset
 
 mapped_columns = {
     'location':  {
-        "station": "site name",
-        "stat_alt": "site code"
+        "station": "site_name",
+        "stat_alt": "site_code"
     }
 }
 

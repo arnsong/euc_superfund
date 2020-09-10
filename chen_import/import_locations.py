@@ -3,7 +3,6 @@ import json
 import pandas as pd
 import models as m
 from sqlalchemy.orm import sessionmaker
-import config
 from helpers import nan_to_empty
 
 
@@ -18,8 +17,8 @@ with open('../location.json') as f:
 for idx, row in dataframe.iterrows():
     column_metadata = copy(metadata)
     new_location = m.Location(
-        site_name=nan_to_empty(row['site name']),
-        site_code=nan_to_empty(row['site code']),
+        site_name=nan_to_empty(row['site_name']),
+        site_code=nan_to_empty(row['site_code']),
         state=nan_to_empty(row['state']),
         system=nan_to_empty(row['system']),
         subsite=nan_to_empty(row['subsite']),

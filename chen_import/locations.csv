@@ -1,4 +1,4 @@
-site name,site code,state,system,subsite,latitude,longitude,biome_id,biome_name,environmental_feature_id,environmental_feature_name
+site_name,site_code,state,system,subsite,latitude,longitude,biome_id,biome_name,environmental_feature_id,environmental_feature_name
 Above,A,ME,Penobscot River,,44.763090000000005,-68.80048000000001,,,,
 East Union,EU,NJ,Berry's Creek,,40.820570000000004,-74.08614,,,,
 Laurel Hill,LH,NJ,Hackensack River,,40.7627,-74.08808,,,,

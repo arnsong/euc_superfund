@@ -1,16 +1,20 @@
 { 
     "keys": [
-        "site name",
-        "site code",
+        "site_name",
+        "site_code",
         "state",
         "system",
         "subsite",
         "individual_id",
         "latitude",
         "longitude",
-        "urban"
+        "urban",
+        "city",
+        "county",
+        "count_code"
     ],
     "tags": [
+        null,
         null,
         null,
         null,

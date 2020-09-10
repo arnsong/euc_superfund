@@ -17,8 +17,8 @@ with open('../location.json') as f:
 for idx, row in dataframe.iterrows():
     column_metadata = copy(metadata)
     new_location = m.Location(
-        site_name=nan_to_empty(row['site name']),
-        site_code=nan_to_empty(row['site code']),
+        site_name=nan_to_empty(row['site_name']),
+        site_code=nan_to_empty(row['site_code']),
         column_metadata=column_metadata
     )
     session.add(new_location)

@@ -1,0 +1,16 @@
+python models.py
+python import_institutions.py
+cd chen_import
+python extract_locations.py
+python import_locations.py
+cd ../smithsonian_import
+python extract_locations.py
+python import_locations.py
+cd ../ncca_import
+python extract_locations.py
+python import_locations.py
+cd ../nrsa_import
+python extract_locations.py
+python import_locations.py
+cd ../bu_import
+python extract_locations.py

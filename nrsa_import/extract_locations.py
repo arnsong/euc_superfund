@@ -6,7 +6,7 @@ mapped_columns = {
         "Longitude": "longitude",
         "Site.Type": "urban",
         "State": "state",
-        "site_id": "site name"
+        "site_id": "site_name"
     }
 }
 

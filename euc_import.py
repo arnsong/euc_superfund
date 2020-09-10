@@ -72,24 +72,7 @@ class Dataset:
                 location_array.append(location)
 
         if to_file:
-
-            for location in location_array:
-                location['biome_id'] = None
-                location['biome_name'] = None
-                location['environmental_feature_id'] = None
-                location['environmental_feature_name'] = None
-
-            columns = location_array[0].keys()
-
-            df = pd.DataFrame(columns=columns)
-            for location in location_array:
-                data = []
-
-                for key in location.keys():
-                    data.append(location[key])
-
-                df = df.append(pd.DataFrame(columns=columns, data=[data]), ignore_index=True)
-            df.to_csv(to_file, index=False)
+            write_out_unique_locations(location_array)
 
         return location_array
 
@@ -103,3 +86,28 @@ def add_tag(self, data_object, key, tag_id=None, tag_name=None):
     data_object[key] = new_object
 
     return data_object
+
+
+def write_out_unique_locations(locations):
+    unique_locations = []
+
+    for location in locations:
+        if location and location not in unique_locations:
+            unique_locations.append(location)
+
+    for location in unique_locations:
+        location['biome_id'] = None
+        location['biome_name'] = None
+        location['environmental_feature_id'] = None
+        location['environmental_feature_name'] = None
+
+    columns = unique_locations[0].keys()
+    df = pd.DataFrame(columns=columns)
+
+    for location in unique_locations:
+        data = []
+        for key in location.keys():
+            data.append(location[key])
+        df = df.append(pd.DataFrame(columns=columns, data=[data]), ignore_index=True)
+
+    df.to_csv("locations.csv", index=False)

@@ -1,4 +1,4 @@
-site name,biome_id,biome_name,environmental_feature_id,environmental_feature_name
+site_name,biome_id,biome_name,environmental_feature_id,environmental_feature_name
 SERC Cattail,,,,
 SERC Phrag,,,,
 Jug Bay Marsh,,,,

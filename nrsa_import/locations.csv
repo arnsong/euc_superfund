@@ -1,4 +1,4 @@
-latitude,longitude,urban,state,site name,biome_id,biome_name,environmental_feature_id,environmental_feature_name
+latitude,longitude,urban,state,site_name,biome_id,biome_name,environmental_feature_id,environmental_feature_name
 39.70013,-75.63339,Urban,DE,FW08DE005,,,,
 44.24308,-72.04818,Non-urban,NH,FW08NH005,,,,
 39.06637,-77.38956999999999,Urban,MD,FW08MD008,,,,

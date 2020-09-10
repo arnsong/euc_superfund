@@ -1,36 +1,19 @@
 from euc_import import Dataset
-import pandas as pd
+from euc_import import write_out_unique_locations
 
-sediment = Dataset("", "sediment_individual.csv", location_keyfile='../location.json')
+mapped_columns = {
+    'location': {
+        "site name": "site_name",
+        "site code": "site_code"
+    }
+}
+
+sediment = Dataset("", "sediment_individual.csv", location_keyfile='../location.json', mapped_columns=mapped_columns)
 sediment_locations = sediment.get_locations()
 
-biota = Dataset("", "biota_individual.csv", location_keyfile='../location.json')
+biota = Dataset("", "biota_individual.csv", location_keyfile='../location.json', mapped_columns=mapped_columns)
 biota_locations = biota.get_locations()
 
-water = Dataset("", "water_individual.csv", location_keyfile='../location.json')
+water = Dataset("", "water_individual.csv", location_keyfile='../location.json', mapped_columns=mapped_columns)
 water_locations = water.get_locations()
-
-unique_locations = []
-
-for location in (sediment_locations + biota_locations + water_locations):
-    if location not in unique_locations:
-        unique_locations.append(location)
-
-for location in unique_locations:
-    location['biome_id'] = None
-    location['biome_name'] = None
-    location['environmental_feature_id'] = None
-    location['environmental_feature_name'] = None
-
-columns = unique_locations[0].keys()
-df = pd.DataFrame(columns=columns)
-    
-for location in unique_locations:
-    data = []
-
-    for key in location.keys():
-        data.append(location[key])
-
-    df = df.append(pd.DataFrame(columns=columns, data=[data]), ignore_index=True)
-
-df.to_csv("locations.csv", index=False)
+write_out_unique_locations(sediment_locations + biota_locations + water_locations)

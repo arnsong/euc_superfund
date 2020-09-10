@@ -1,4 +1,4 @@
-site name,site code,biome_id,biome_name,environmental_feature_id,environmental_feature_name
+site_name,site_code,biome_id,biome_name,environmental_feature_id,environmental_feature_name
 NH00-0019,A,,,,
 NH00-0057,A,,,,
 NH00-0063,A,,,,
