@@ -2,6 +2,7 @@ import chen_import
 import smithsonian_import
 import ncca_import
 import nrsa_import
+import bu_import
 import pandas as pd
 import models as m
 from sqlalchemy.orm import sessionmaker
@@ -35,6 +36,8 @@ def import_all_locations():
     ncca_import.import_locations()
     nrsa_import.extract_locations()
     nrsa_import.import_locations()
+    bu_import.extract_locations()
+    bu_import.import_locations()
 
 
 def main():

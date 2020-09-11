@@ -37,7 +37,7 @@ class Location(Base):
     county_code = Column(String(50))
     state = Column(String(2))
     system = Column(String(50))
-    subsite = Column(String(10))
+    subsite = Column(String(50))
     individual_id = Column(String(20))
     latitude = Column(Numeric(10, 5))
     longitude = Column(Numeric(10, 5))
