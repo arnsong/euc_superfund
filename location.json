@@ -2,6 +2,7 @@
     "keys": [
         "site_name",
         "site_code",
+        "site_id",
         "state",
         "system",
         "subsite",
@@ -11,9 +12,10 @@
         "urban",
         "city",
         "county",
-        "count_code"
+        "county_code"
     ],
     "tags": [
+        null,
         null,
         null,
         null,

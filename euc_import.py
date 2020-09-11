@@ -72,7 +72,7 @@ class Dataset:
                 location_array.append(location)
 
         if to_file:
-            write_out_unique_locations(location_array)
+            write_out_unique_locations(location_array, file_name=to_file)
 
         return location_array
 
@@ -88,7 +88,7 @@ def add_tag(self, data_object, key, tag_id=None, tag_name=None):
     return data_object
 
 
-def write_out_unique_locations(locations):
+def write_out_unique_locations(locations, file_name='locations.csv'):
     unique_locations = []
 
     for location in locations:
@@ -110,4 +110,4 @@ def write_out_unique_locations(locations):
             data.append(location[key])
         df = df.append(pd.DataFrame(columns=columns, data=[data]), ignore_index=True)
 
-    df.to_csv("locations.csv", index=False)
+    df.to_csv(file_name, index=False)
