@@ -1,4 +1,5 @@
 import chen_import
+import smithsonian_import
 import pandas as pd
 import models as m
 from sqlalchemy.orm import sessionmaker
@@ -19,11 +20,21 @@ def import_institutions():
         session.commit()
 
 
-def main():
+def initialize_tables():
     m.Base.metadata.create_all(m.engine)
-    import_institutions()
+
+
+def import_all_locations():
     chen_import.extract_locations()
     chen_import.import_locations()
+    smithsonian_import.extract_locations()
+    smithsonian_import.import_locations()
+
+
+def main():
+    initialize_tables()
+    import_institutions()
+    import_all_locations()
 
 
 if __name__ == "__main__":
