@@ -1,4 +1,4 @@
-from euc_import import Dataset
+from dataset import Dataset
 
 sweden_mapped_columns = {
     'location':  {

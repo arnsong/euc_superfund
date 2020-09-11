@@ -1,5 +1,5 @@
-from euc_import import Dataset
-from euc_import import write_out_unique_locations
+from dataset import Dataset
+from dataset import write_out_unique_locations
 
 mapped_columns = {
     'location':  {

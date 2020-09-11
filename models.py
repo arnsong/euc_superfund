@@ -214,5 +214,3 @@ class QualityControl(Base):
     analysis_dup_rpd = Column(Integer)
     comment = Column(Text)
 
-
-Base.metadata.create_all(engine)
