@@ -56,7 +56,7 @@ class Sample(Base):
     lab_sample_id = Column(String(50))
     specimen_id = Column(String(10))
     collection_datetime = Column(DateTime)
-    sample_category = Column(String(20))
+    # sample_category = Column(String(20))
     file_name = Column(String(100))
     sample_type = Column(String(20))
     min_depth = Column(Integer)
@@ -202,8 +202,8 @@ class SampleCompound(Base):
     sample_id = Column(Integer, ForeignKey("samples.id"), nullable=False)
     compound_id = Column(Integer, ForeignKey("compounds.id"), nullable=False)
     measurement = Column(Numeric(10, 5))
+    units = Column(String(10))
     # qa_flag = Column(String(10))
-    # units = Column(String(10))  # Should this be only in the metadata tags?
 
 
 # class QualityControl(Base):

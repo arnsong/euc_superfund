@@ -1,8 +1,8 @@
 import chen_import
 import smithsonian_import
-import ncca_import
-import nrsa_import
-import bu_import
+# import ncca_import
+# import nrsa_import
+# import bu_import
 import pandas as pd
 import models as m
 from sqlalchemy.orm import sessionmaker
