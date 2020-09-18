@@ -41,6 +41,7 @@ def import_compounds():
 
 
 def initialize_tables():
+    m.Base.metadata.drop_all(m.engine)
     m.Base.metadata.create_all(m.engine)
 
 
@@ -62,6 +63,7 @@ def main():
     import_institutions()
     import_compounds()
     import_all_locations()
+    chen_import.import_samples()
 
 
 if __name__ == "__main__":

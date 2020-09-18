@@ -52,3 +52,46 @@ def import_locations():
         session.add(new_location)
         session.commit()
 
+
+def import_samples():
+    Session = sessionmaker(bind=m.engine)
+    session = Session()
+
+    institution_id = find_institution_id(session, 'Dartmouth')
+    dataframe = pd.read_csv('chen_import/sediment_individual.csv')
+    with open('sample.json') as f:
+        metadata = json.load(f)
+
+    for idx, row in dataframe.iterrows():
+        column_metadata = copy(metadata)
+        location_id = find_location_id(session, row)
+        min_depth, max_depth = str(row['sample depth (cm)']).split('-') \
+            if row['sample depth (cm)'] == row['sample depth (cm)'] else [None, None]
+        new_sample = m.Sample(
+            institution_id=institution_id,
+            location_id=location_id,
+            column_metadata=column_metadata,
+            collection_datetime=row['sample_date'],
+            file_name=nan_to_empty(row['file name for data pull']),
+            sample_type=row['sample type'],
+            min_depth=min_depth,
+            max_depth=max_depth
+        )
+        session.add(new_sample)
+        session.commit()
+
+
+def find_location_id(session, row):
+    location_id = session.query(m.Location.id).filter_by(
+        site_name=nan_to_empty(row['site name']),
+        site_code=nan_to_empty(row['site code']),
+        state=nan_to_empty(row['state']),
+        system=nan_to_empty(row['system']),
+        subsite=nan_to_empty(row['subsite'])
+    ).one()
+    return location_id[0]
+
+
+def find_institution_id(session, institution_name):
+    institution_id = session.query(m.Institution.id).filter_by(name=institution_name).one()
+    return institution_id[0]
