@@ -58,9 +58,17 @@ def import_samples():
     session = Session()
 
     institution_id = find_institution_id(session, 'Dartmouth')
+    compound_ids = find_compound_ids(session)
+    compound_map = {
+        "mehg": ['sediment MeHg (ng/g DW)', 'mehg_units'],
+        "total_hg": ['sediment THg (ng/g DW)', 'total_hg_units'],
+        "percent_loi": ['%LOI', '']
+    }
     dataframe = pd.read_csv('chen_import/sediment_individual.csv')
     with open('sample.json') as f:
         metadata = json.load(f)
+    with open('sample_compound.json') as f:
+        sample_compound_metadata = json.load(f)
 
     for idx, row in dataframe.iterrows():
         column_metadata = copy(metadata)
@@ -80,6 +88,17 @@ def import_samples():
         session.add(new_sample)
         session.commit()
 
+        for compound, measurement_array in compound_map.items():
+            new_sample_compound = m.SampleCompound(
+                column_metadata=copy(sample_compound_metadata),
+                sample_id=new_sample.id,
+                compound_id=compound_ids[compound],
+                measurement=row[measurement_array[0]] if str(row[measurement_array[0]]).strip() else None,
+                units=row[measurement_array[1]] if measurement_array[1] else None
+            )
+            session.add(new_sample_compound)
+            session.commit()
+
 
 def find_location_id(session, row):
     location_id = session.query(m.Location.id).filter_by(
@@ -95,3 +114,11 @@ def find_location_id(session, row):
 def find_institution_id(session, institution_name):
     institution_id = session.query(m.Institution.id).filter_by(name=institution_name).one()
     return institution_id[0]
+
+
+def find_compound_ids(session):
+    return {
+        "mehg": session.query(m.Compound.id).filter_by(name='MeHg').one()[0],
+        "total_hg": session.query(m.Compound.id).filter_by(name='Total Hg').one()[0],
+        "percent_loi": session.query(m.Compound.id).filter_by(name='% LOI').one()[0]
+    }
