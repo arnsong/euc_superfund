@@ -57,7 +57,7 @@ class Sample(Base):
     specimen_id = Column(String(10))
     collection_datetime = Column(DateTime)
     # sample_category = Column(String(20))
-    file_name = Column(String(100))
+    file_name = Column(String(150))
     sample_type = Column(String(20))
     min_depth = Column(Integer)
     max_depth = Column(Integer)

@@ -5,7 +5,7 @@ import json
 import pandas as pd
 import models as m
 from sqlalchemy.orm import sessionmaker
-from helpers import nan_to_empty
+from helpers import nan_to_empty, find_compound_ids, find_institution_id
 
 
 def extract_locations():
@@ -38,7 +38,6 @@ def import_locations():
         metadata = json.load(f)
 
     for idx, row in dataframe.iterrows():
-        column_metadata = copy(metadata)
         new_location = m.Location(
             site_name=nan_to_empty(row['site_name']),
             site_code=nan_to_empty(row['site_code']),
@@ -47,7 +46,7 @@ def import_locations():
             subsite=nan_to_empty(row['subsite']),
             latitude=row['latitude'],
             longitude=row['longitude'],
-            column_metadata=column_metadata
+            column_metadata=copy(metadata)
         )
         session.add(new_location)
         session.commit()
@@ -71,14 +70,13 @@ def import_samples():
         sample_compound_metadata = json.load(f)
 
     for idx, row in dataframe.iterrows():
-        column_metadata = copy(metadata)
         location_id = find_location_id(session, row)
         min_depth, max_depth = str(row['sample depth (cm)']).split('-') \
             if row['sample depth (cm)'] == row['sample depth (cm)'] else [None, None]
         new_sample = m.Sample(
             institution_id=institution_id,
             location_id=location_id,
-            column_metadata=column_metadata,
+            column_metadata=copy(metadata),
             collection_datetime=row['sample_date'],
             file_name=nan_to_empty(row['file name for data pull']),
             sample_type=row['sample type'],
@@ -109,16 +107,3 @@ def find_location_id(session, row):
         subsite=nan_to_empty(row['subsite'])
     ).one()
     return location_id[0]
-
-
-def find_institution_id(session, institution_name):
-    institution_id = session.query(m.Institution.id).filter_by(name=institution_name).one()
-    return institution_id[0]
-
-
-def find_compound_ids(session):
-    return {
-        "mehg": session.query(m.Compound.id).filter_by(name='MeHg').one()[0],
-        "total_hg": session.query(m.Compound.id).filter_by(name='Total Hg').one()[0],
-        "percent_loi": session.query(m.Compound.id).filter_by(name='% LOI').one()[0]
-    }

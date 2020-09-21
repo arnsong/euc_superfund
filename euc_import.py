@@ -64,6 +64,7 @@ def main():
     import_compounds()
     import_all_locations()
     chen_import.import_samples()
+    smithsonian_import.import_samples()
 
 
 if __name__ == "__main__":
