@@ -4,7 +4,7 @@ import json
 import pandas as pd
 import models as m
 from sqlalchemy.orm import sessionmaker
-from helpers import nan_to_empty
+from helpers import nan_to_none
 
 
 def extract_locations():
@@ -34,11 +34,11 @@ def import_locations():
     for idx, row in dataframe.iterrows():
         column_metadata = copy(metadata)
         new_location = m.Location(
-            site_name=nan_to_empty(row['site_name']),
+            site_name=nan_to_none(row['site_name']),
             latitude=row['latitude'],
             longitude=row['longitude'],
             urban=(row['urban'] == 'Urban'),
-            state=nan_to_empty(row['state']),
+            state=nan_to_none(row['state']),
             column_metadata=column_metadata
         )
         session.add(new_location)

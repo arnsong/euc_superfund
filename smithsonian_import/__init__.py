@@ -5,7 +5,7 @@ import json
 import pandas as pd
 import models as m
 from sqlalchemy.orm import sessionmaker
-from helpers import nan_to_empty, find_institution_id, find_compound_ids
+from helpers import nan_to_none, find_institution_id, find_compound_ids, sample_exists
 
 
 def extract_locations():
@@ -39,7 +39,7 @@ def import_locations():
 
     for idx, row in dataframe.iterrows():
         new_location = m.Location(
-            site_name=nan_to_empty(row['site_name']),
+            site_name=nan_to_none(row['site_name']),
             column_metadata=copy(metadata)
         )
         session.add(new_location)
@@ -61,6 +61,8 @@ def import_samples():
     column_metadata = copy(metadata)
 
     for idx, row in dataframe.iterrows():
+        if sample_exists(session, row['LAB SAMPLE ID'], institution_id):
+            continue
         location_id = find_location_id(session, row)
         depth = row['Core Depth']
         min_depth, max_depth = str(depth).split(' ')[0].split('-') \
@@ -74,7 +76,7 @@ def import_samples():
             file_name=row['SOURCE FILE'],
             min_depth=min_depth,
             max_depth=max_depth,
-            average_depth=nan_to_empty(row['Ave Core depth (cm)'])
+            average_depth=nan_to_none(row['Ave Core depth (cm)'])
         )
         session.add(new_sample)
         session.commit()
@@ -92,5 +94,5 @@ def import_samples():
 
 
 def find_location_id(session, row):
-    return session.query(m.Location.id).filter_by(site_name=nan_to_empty(row['SITE'])).one()[0]
+    return session.query(m.Location.id).filter_by(site_name=nan_to_none(row['SITE'])).one()[0]
 

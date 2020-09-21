@@ -5,7 +5,7 @@ import json
 import pandas as pd
 import models as m
 from sqlalchemy.orm import sessionmaker
-from helpers import nan_to_empty, find_compound_ids, find_institution_id
+from helpers import nan_to_none, find_compound_ids, find_institution_id
 
 
 def extract_locations():
@@ -39,11 +39,11 @@ def import_locations():
 
     for idx, row in dataframe.iterrows():
         new_location = m.Location(
-            site_name=nan_to_empty(row['site_name']),
-            site_code=nan_to_empty(row['site_code']),
-            state=nan_to_empty(row['state']),
-            system=nan_to_empty(row['system']),
-            subsite=nan_to_empty(row['subsite']),
+            site_name=nan_to_none(row['site_name']),
+            site_code=nan_to_none(row['site_code']),
+            state=nan_to_none(row['state']),
+            system=nan_to_none(row['system']),
+            subsite=nan_to_none(row['subsite']),
             latitude=row['latitude'],
             longitude=row['longitude'],
             column_metadata=copy(metadata)
@@ -78,7 +78,7 @@ def import_samples():
             location_id=location_id,
             column_metadata=copy(metadata),
             collection_datetime=row['sample_date'],
-            file_name=nan_to_empty(row['file name for data pull']),
+            file_name=nan_to_none(row['file name for data pull']),
             sample_type=row['sample type'],
             min_depth=min_depth,
             max_depth=max_depth
@@ -100,10 +100,10 @@ def import_samples():
 
 def find_location_id(session, row):
     location_id = session.query(m.Location.id).filter_by(
-        site_name=nan_to_empty(row['site name']),
-        site_code=nan_to_empty(row['site code']),
-        state=nan_to_empty(row['state']),
-        system=nan_to_empty(row['system']),
-        subsite=nan_to_empty(row['subsite'])
+        site_name=nan_to_none(row['site name']),
+        site_code=nan_to_none(row['site code']),
+        state=nan_to_none(row['state']),
+        system=nan_to_none(row['system']),
+        subsite=nan_to_none(row['subsite'])
     ).one()
     return location_id[0]

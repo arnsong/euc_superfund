@@ -4,7 +4,7 @@ import json
 import pandas as pd
 import models as m
 from sqlalchemy.orm import sessionmaker
-from helpers import nan_to_empty
+from helpers import nan_to_none
 
 
 def extract_locations():
@@ -57,8 +57,8 @@ def import_nbh_locations():
     for idx, row in dataframe.iterrows():
         column_metadata = copy(metadata)
         new_location = m.Location(
-            site_name=nan_to_empty(row['site_name']),
-            subsite=nan_to_empty(row['subsite']),
+            site_name=nan_to_none(row['site_name']),
+            subsite=nan_to_none(row['subsite']),
             column_metadata=column_metadata
         )
         session.add(new_location)
@@ -77,12 +77,12 @@ def import_sweden_locations():
     for idx, row in dataframe.iterrows():
         column_metadata = copy(metadata)
         new_location = m.Location(
-            site_name=nan_to_empty(row['site_name']),
-            site_id=nan_to_empty(row['site_id']),
+            site_name=nan_to_none(row['site_name']),
+            site_id=nan_to_none(row['site_id']),
             latitude=row['latitude'],
             longitude=row['longitude'],
-            city=nan_to_empty(row['city']),
-            county_code=nan_to_empty(row['county_code']),
+            city=nan_to_none(row['city']),
+            county_code=nan_to_none(row['county_code']),
             column_metadata=column_metadata
         )
         session.add(new_location)
