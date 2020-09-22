@@ -1,0 +1,20 @@
+{
+    "keys": [
+        "analysis_date",
+        "method",
+        "filter",
+        "preservation",
+        "detection_limit",
+        "detection_limit_flag",
+        "dilution"
+    ],
+    "tag": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ]
+}

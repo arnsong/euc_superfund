@@ -63,7 +63,8 @@ def import_samples():
         metadata = json.load(f)
     with open('sample_compound.json') as f:
         sample_compound_metadata = json.load(f)
-    column_metadata = copy(metadata)
+    with open('sample_preparation.json') as f:
+        sample_preparation_metadata = json.load(f)
 
     for idx, row in dataframe.iterrows():
         if row['SAMPLE TYPE'] != 'Soil':
@@ -78,7 +79,7 @@ def import_samples():
             sample = m.Sample(
                 institution_id=institution_id,
                 location_id=location_id,
-                column_metadata=column_metadata,
+                column_metadata=copy(metadata),
                 lab_sample_id=row['LAB SAMPLE ID'],
                 collection_datetime=row['COLLECTION_DATE'],
                 file_name=row['SOURCE FILE'],
@@ -90,10 +91,24 @@ def import_samples():
             session.add(sample)
             session.commit()
 
-        # TODO: Insert Sample prep?
-
-        # Insert Sample measurements
         if row['PARAMETER'] in measurement_params_map.keys():
+            # Insert Sample prep
+            new_sample_preparation = m.SamplePreparation(
+                column_metadata=copy(sample_preparation_metadata),
+                sample_id=sample.id,
+                analysis_date=row['ANALYSIS DATE'],
+                method=row['SAMPLING METHOD'],
+                filter=row['FILTER'],
+                preservation=nan_to_none(row['SAMPLE PRESERVATION']),
+                detection_limit=nan_to_none(row['DL']),
+                detection_limit_units=row['UNITS'],
+                detection_limit_flag=nan_to_none(row['DL Flag']),
+                dilution=nan_to_none(row['Dilution'])
+            )
+            session.add(new_sample_preparation)
+            session.commit()
+
+            # Insert Sample measurements
             new_sample_compound = m.SampleCompound(
                 column_metadata=copy(sample_compound_metadata),
                 sample_id=sample.id,

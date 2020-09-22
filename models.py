@@ -118,6 +118,7 @@ class SamplePreparation(Base):
     filter = Column(String(50))
     preservation = Column(String(50))
     detection_limit = Column(Numeric(10, 5))
+    detection_limit_units = Column(String(50))
     detection_limit_flag = Column(String(1))
     dilution = Column(Integer)
 
