@@ -18,6 +18,6 @@ def find_compound_ids(session):
     }
 
 
-def sample_exists(session, sample_id, institution_id):
-    print('Found sample id.')
-    return session.query(m.Sample).filter_by(lab_sample_id=sample_id, institution_id=institution_id).count() > 0
+def find_system_sample_id(session, sample_id, institution_id):
+    sample_id = session.query(m.Sample.id).filter_by(lab_sample_id=sample_id, institution_id=institution_id)
+    return sample_id[0] if sample_id.count() > 0 else None

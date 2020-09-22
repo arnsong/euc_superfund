@@ -59,9 +59,9 @@ def import_samples():
     institution_id = find_institution_id(session, 'Dartmouth')
     compound_ids = find_compound_ids(session)
     compound_map = {
-        "mehg": ['sediment MeHg (ng/g DW)', 'mehg_units'],
-        "total_hg": ['sediment THg (ng/g DW)', 'total_hg_units'],
-        "percent_loi": ['%LOI', '']
+        'mehg': ['sediment MeHg (ng/g DW)', 'mehg_units'],
+        'total_hg': ['sediment THg (ng/g DW)', 'total_hg_units'],
+        'percent_loi': ['%LOI', '']
     }
     dataframe = pd.read_csv('chen_import/sediment_individual.csv')
     with open('sample.json') as f:

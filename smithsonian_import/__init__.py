@@ -5,19 +5,19 @@ import json
 import pandas as pd
 import models as m
 from sqlalchemy.orm import sessionmaker
-from helpers import nan_to_none, find_institution_id, find_compound_ids, sample_exists
+from helpers import nan_to_none, find_institution_id, find_compound_ids, find_system_sample_id
 
 
 def extract_locations():
     mapped_columns = {
         'location':  {
-            "SITE": "site_name"
+            'SITE': 'site_name'
         }
     }
 
     plot_mapped_columns = {
         'location':  {
-            "SITE_NAME": "site_name"
+            'SITE_NAME': 'site_name'
         }
     }
     marsh = Dataset("", "smithsonian_import/chesapeake_marsh.csv", mapped_columns=mapped_columns)
@@ -52,6 +52,11 @@ def import_samples():
 
     institution_id = find_institution_id(session, 'Smithsonian')
     compound_ids = find_compound_ids(session)
+    measurement_params_map = {
+        'MeHg-bulk': 'mehg',
+        'THg-bulk': 'total_hg',
+        'LOI': 'percent_loi'
+    }
 
     dataframe = pd.read_csv('smithsonian_import/chesapeake_marsh.csv')
     with open('sample.json') as f:
@@ -61,38 +66,44 @@ def import_samples():
     column_metadata = copy(metadata)
 
     for idx, row in dataframe.iterrows():
-        if sample_exists(session, row['LAB SAMPLE ID'], institution_id):
+        if row['SAMPLE TYPE'] != 'Soil':
             continue
-        location_id = find_location_id(session, row)
-        depth = row['Core Depth']
-        min_depth, max_depth = str(depth).split(' ')[0].split('-') \
-            if depth == depth and '-' in depth else [None, None]
-        new_sample = m.Sample(
-            institution_id=institution_id,
-            location_id=location_id,
-            column_metadata=column_metadata,
-            lab_sample_id=row['LAB SAMPLE ID'],
-            collection_datetime=row['COLLECTION_DATE'],
-            file_name=row['SOURCE FILE'],
-            min_depth=min_depth,
-            max_depth=max_depth,
-            average_depth=nan_to_none(row['Ave Core depth (cm)'])
-        )
-        session.add(new_sample)
-        session.commit()
+        sample = find_system_sample_id(session, row['LAB SAMPLE ID'], institution_id)
+        # Insert sample
+        if not sample:
+            location_id = find_location_id(session, row)
+            depth = row['Core Depth']
+            min_depth, max_depth = str(depth).split(' ')[0].split('-') \
+                if depth == depth and '-' in depth else [None, None]
+            sample = m.Sample(
+                institution_id=institution_id,
+                location_id=location_id,
+                column_metadata=column_metadata,
+                lab_sample_id=row['LAB SAMPLE ID'],
+                collection_datetime=row['COLLECTION_DATE'],
+                file_name=row['SOURCE FILE'],
+                min_depth=min_depth,
+                max_depth=max_depth,
+                average_depth=nan_to_none(row['Ave Core depth (cm)']),
+                sample_type=row['SAMPLE TYPE']
+            )
+            session.add(sample)
+            session.commit()
 
-        # for compound, measurement_array in compound_map.items():
-        #     new_sample_compound = m.SampleCompound(
-        #         column_metadata=copy(sample_compound_metadata),
-        #         sample_id=new_sample.id,
-        #         compound_id=compound_ids[compound],
-        #         measurement=row[measurement_array[0]] if str(row[measurement_array[0]]).strip() else None,
-        #         units=row[measurement_array[1]] if measurement_array[1] else None
-        #     )
-        #     session.add(new_sample_compound)
-        #     session.commit()
+        # TODO: Insert Sample prep?
+
+        # Insert Sample measurements
+        if row['PARAMETER'] in measurement_params_map.keys():
+            new_sample_compound = m.SampleCompound(
+                column_metadata=copy(sample_compound_metadata),
+                sample_id=sample.id,
+                compound_id=compound_ids[measurement_params_map[row['PARAMETER']]],
+                measurement=row['VALUE'],
+                units=row['UNITS']
+            )
+            session.add(new_sample_compound)
+            session.commit()
 
 
 def find_location_id(session, row):
     return session.query(m.Location.id).filter_by(site_name=nan_to_none(row['SITE'])).one()[0]
-
