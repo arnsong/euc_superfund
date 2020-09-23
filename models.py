@@ -62,6 +62,10 @@ class Sample(Base):
     min_depth = Column(Integer)
     max_depth = Column(Integer)
     average_depth = Column(Integer)
+    days_post_dosing = Column(Integer)
+    box_number = Column(Integer)
+    box_zone = Column(String(1))
+    replicate_number = Column(String(2))
 
 
 # class WaterSample(Base):
@@ -204,7 +208,16 @@ class SampleCompound(Base):
     compound_id = Column(Integer, ForeignKey("compounds.id"), nullable=False)
     measurement = Column(Numeric(10, 5))
     units = Column(String(10))
+    source_of_hg_spike_id = Column(Integer, ForeignKey("isotopes.id"), nullable=False)
     # qa_flag = Column(String(10))
+
+
+class Isotope(Base):
+    __tablename__ = 'isotopes'
+
+    id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
+    column_metadata = Column(JSONB, nullable=False)
+    name = Column(String(50))
 
 
 # class QualityControl(Base):
