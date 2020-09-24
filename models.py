@@ -59,6 +59,7 @@ class Sample(Base):
     # sample_category = Column(String(20))
     file_name = Column(String(150))
     sample_type = Column(String(20))
+    sample_category = Column(String(20))
     min_depth = Column(Integer)
     max_depth = Column(Integer)
     average_depth = Column(Integer)
@@ -208,7 +209,7 @@ class SampleCompound(Base):
     compound_id = Column(Integer, ForeignKey("compounds.id"), nullable=False)
     measurement = Column(Numeric(10, 5))
     units = Column(String(10))
-    source_of_hg_spike_id = Column(Integer, ForeignKey("isotopes.id"), nullable=False)
+    source_of_hg_spike_id = Column(Integer, ForeignKey("isotopes.id"))
     # qa_flag = Column(String(10))
 
 

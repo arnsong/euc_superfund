@@ -8,35 +8,21 @@ import models as m
 from sqlalchemy.orm import sessionmaker
 import config
 
+basic_metadata = {'keys': ['name'], 'tags': [None]}
 
-def import_institutions():
+
+def import_simple(model, path_to_input, metadata=False):
     Session = sessionmaker(bind=m.engine)
     session = Session()
 
-    path = config.PATH_TO_INSTITUTIONS
-
-    dataframe = pd.read_csv(path)
+    dataframe = pd.read_csv(path_to_input)
 
     for idx, row in dataframe.iterrows():
-        new_institution = m.Institution(name=row['name'])
-        session.add(new_institution)
-        session.commit()
-
-
-def import_compounds():
-    Session = sessionmaker(bind=m.engine)
-    session = Session()
-
-    path = config.PATH_TO_COMPOUNDS
-
-    dataframe = pd.read_csv(path)
-
-    for idx, row in dataframe.iterrows():
-        new_compound = m.Compound(
-            name=row['name'],
-            column_metadata={'keys': ['name'], 'tags': [None]}
-        )
-        session.add(new_compound)
+        create_params = {'name': row['name']}
+        if metadata:
+            create_params['column_metadata'] = basic_metadata
+        new_record = model(**create_params)
+        session.add(new_record)
         session.commit()
 
 
@@ -60,8 +46,9 @@ def import_all_locations():
 
 def main():
     initialize_tables()
-    import_institutions()
-    import_compounds()
+    import_simple(m.Institution, config.PATH_TO_INSTITUTIONS)
+    import_simple(m.Compound, config.PATH_TO_COMPOUNDS, metadata=True)
+    import_simple(m.Isotope, config.PATH_TO_ISOTOPES, metadata=True)
     import_all_locations()
     chen_import.import_samples()
     smithsonian_import.import_samples()

@@ -80,6 +80,7 @@ def import_samples():
             collection_datetime=row['sample_date'],
             file_name=nan_to_none(row['file name for data pull']),
             sample_type=row['sample type'],
+            sample_category='Sediment',
             min_depth=min_depth,
             max_depth=max_depth
         )

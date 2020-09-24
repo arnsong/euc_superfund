@@ -86,7 +86,8 @@ def import_samples():
                 min_depth=min_depth,
                 max_depth=max_depth,
                 average_depth=nan_to_none(row['Ave Core depth (cm)']),
-                sample_type=row['SAMPLE TYPE']
+                sample_type=row['SAMPLE TYPE'],
+                sample_category='Sediment'
             )
             session.add(sample)
             session.commit()
