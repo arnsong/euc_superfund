@@ -1,5 +1,6 @@
 import chen_import
 import smithsonian_import
+import duke_import
 # import ncca_import
 # import nrsa_import
 # import bu_import
@@ -36,6 +37,7 @@ def import_all_locations():
     chen_import.import_locations()
     smithsonian_import.extract_locations()
     smithsonian_import.import_locations()
+    duke_import.import_location_and_samples()
     # ncca_import.extract_locations()
     # ncca_import.import_locations()
     # nrsa_import.extract_locations()

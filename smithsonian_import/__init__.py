@@ -69,7 +69,10 @@ def import_samples():
     for idx, row in dataframe.iterrows():
         if row['SAMPLE TYPE'] != 'Soil':
             continue
-        sample = find_system_sample_id(session, row['LAB SAMPLE ID'], institution_id)
+        sample = find_system_sample_id(
+            session,
+            {'institution_id': institution_id, 'lab_sample_id': row['LAB SAMPLE ID']}
+        )
         # Insert sample
         if not sample:
             location_id = find_location_id(session, row)
