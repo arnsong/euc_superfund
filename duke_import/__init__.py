@@ -9,17 +9,22 @@ import json
 def import_location_and_samples():
     Session = sessionmaker(bind=m.engine)
     session = Session()
-
     with open('location.json') as f:
         location_metadata = json.load(f)
-
     new_location = m.Location(
         site_name='Duke Wetland Mesocosm Facility',
         column_metadata=copy(location_metadata)
     )
     session.add(new_location)
     session.commit()
+    # Is this CSV day 0?
+    mercury_analysis_dataframe = pd.read_csv('duke_import/mercury_analysis.csv')
+    sequential_extractions = pd.read_csv('duke_import/sequential_extractions.csv')
+    import_sample_sheet(session, new_location.id, mercury_analysis_dataframe)
+    import_sample_sheet(session, new_location.id, sequential_extractions)
 
+
+def import_sample_sheet(session, location_id, dataframe):
     institution_id = find_institution_id(session, 'Duke')
     compound_ids = find_compound_ids(session)
     isotope_ids = find_isotope_ids(session)
@@ -28,8 +33,6 @@ def import_location_and_samples():
         'MeHg': 'mehg'
     }
 
-    # Is this CSV day 0?
-    dataframe = pd.read_csv('duke_import/mercury_analysis.csv')
     with open('sample.json') as f:
         metadata = json.load(f)
     with open('sample_compound.json') as f:
@@ -44,13 +47,12 @@ def import_location_and_samples():
         )
         # Insert sample
         if not sample:
-            print('Trying to parse: {}'.format(row['Depth interval (in cm)']))
             depth = row['Depth interval (in cm)']
             min_depth, max_depth = str(depth).split('-') \
                 if depth == depth and '-' in depth else [None, None]
             sample = m.Sample(
                 institution_id=institution_id,
-                location_id=new_location.id,
+                location_id=location_id,
                 column_metadata=copy(metadata),
                 min_depth=min_depth,
                 max_depth=max_depth,
@@ -64,14 +66,15 @@ def import_location_and_samples():
 
         if row['Analyte'] in compound_map.keys():
             for isotope, isotope_id in isotope_ids.items():
-                # Insert Sample measurements
-                new_sample_compound = m.SampleCompound(
-                    column_metadata=copy(sample_compound_metadata),
-                    sample_id=sample.id,
-                    compound_id=compound_ids[compound_map[row['Analyte']]],
-                    measurement=row[isotope],
-                    units=row['Analyte Units'],
-                    source_of_hg_spike_id=isotope_id
-                )
-                session.add(new_sample_compound)
-                session.commit()
+                if isotope in row:
+                    # Insert Sample measurements
+                    new_sample_compound = m.SampleCompound(
+                        column_metadata=copy(sample_compound_metadata),
+                        sample_id=sample.id,
+                        compound_id=compound_ids[compound_map[row['Analyte']]],
+                        measurement=None if row[isotope] == 'BDL' else row[isotope],
+                        units=row['Analyte Units'],
+                        source_of_hg_spike_id=isotope_id
+                    )
+                    session.add(new_sample_compound)
+                    session.commit()
