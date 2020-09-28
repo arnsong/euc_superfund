@@ -1,4 +1,4 @@
-Sampling date,Days post-dosing,Box #,Sample Type,Box Zone,Depth interval (in cm),Sample Replicate Number,Analyte,Analyte Units,199Hg-FeS,nano-200HgS,201Hg-humic ,202Hg2+,Ambient Hg
+Sampling date,Days post-dosing,Box #,Sample Type,Box Zone,Depth interval (in cm),Sample Replicate Number,Analyte,Analyte Units,199Hg-FeS,nano-200HgS,201Hg-humic,202Hg2+,Ambient Hg
 #VALUE!,2,16,s,A,0-2,1A,TotHg,ng/g dw,5.44,5.42,4.58,6.75,24.62
 #VALUE!,2,16,s,A,0-2,1B,TotHg,ng/g dw,2.22,2.36,1.85,3.32,15.16
 #VALUE!,2,16,s,A,0-2,1C,TotHg,ng/g dw,29.17,21.41,19.57,22.41,12.51

@@ -1,6 +1,6 @@
 import models as m
 from sqlalchemy.orm import sessionmaker
-from helpers import nan_to_none, find_compound_ids, find_institution_id, find_system_sample_id
+from helpers import find_compound_ids, find_institution_id, find_system_sample_id, find_isotope_ids
 import pandas as pd
 from copy import copy
 import json
@@ -22,6 +22,7 @@ def import_location_and_samples():
 
     institution_id = find_institution_id(session, 'Duke')
     compound_ids = find_compound_ids(session)
+    isotope_ids = find_isotope_ids(session)
     compound_map = {
         'TotHg': 'total_hg',
         'MeHg': 'mehg'
@@ -60,3 +61,17 @@ def import_location_and_samples():
             )
             session.add(sample)
             session.commit()
+
+        if row['Analyte'] in compound_map.keys():
+            for isotope, isotope_id in isotope_ids.items():
+                # Insert Sample measurements
+                new_sample_compound = m.SampleCompound(
+                    column_metadata=copy(sample_compound_metadata),
+                    sample_id=sample.id,
+                    compound_id=compound_ids[compound_map[row['Analyte']]],
+                    measurement=row[isotope],
+                    units=row['Analyte Units'],
+                    source_of_hg_spike_id=isotope_id
+                )
+                session.add(new_sample_compound)
+                session.commit()
