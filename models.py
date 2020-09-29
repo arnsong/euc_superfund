@@ -63,7 +63,6 @@ class Sample(Base):
     min_depth = Column(Numeric(5, 2))
     max_depth = Column(Numeric(5, 2))
     average_depth = Column(Integer)
-    days_post_dosing = Column(Integer)
     box_number = Column(Integer)
     box_zone = Column(String(1))
     replicate_number = Column(String(2))
@@ -210,6 +209,7 @@ class SampleCompound(Base):
     measurement = Column(Numeric(10, 5))
     units = Column(String(10))
     source_of_hg_spike_id = Column(Integer, ForeignKey("isotopes.id"))
+    days_post_dosing = Column(Integer)
     # qa_flag = Column(String(10))
 
 

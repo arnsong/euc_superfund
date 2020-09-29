@@ -1,6 +1,6 @@
 import models as m
 from sqlalchemy.orm import sessionmaker
-from helpers import find_compound_ids, find_institution_id, find_system_sample_id, find_isotope_ids
+from helpers import find_compound_ids, find_institution_id, find_system_sample_id, find_isotope_ids, nan_to_none
 import pandas as pd
 from copy import copy
 import json
@@ -54,6 +54,7 @@ def import_sample_sheet(session, location_id, dataframe):
                 institution_id=institution_id,
                 location_id=location_id,
                 column_metadata=copy(metadata),
+                collection_datetime=nan_to_none(row['Sampling date']),
                 min_depth=min_depth,
                 max_depth=max_depth,
                 sample_category='Sediment',
@@ -67,14 +68,17 @@ def import_sample_sheet(session, location_id, dataframe):
         if row['Analyte'] in compound_map.keys():
             for isotope, isotope_id in isotope_ids.items():
                 if isotope in row:
+                    create_params = {
+                        'column_metadata': copy(sample_compound_metadata),
+                        'sample_id': sample.id,
+                        'compound_id': compound_ids[compound_map[row['Analyte']]],
+                        'measurement': None if row[isotope] == 'BDL' else row[isotope],
+                        'units': row['Analyte Units'],
+                        'source_of_hg_spike_id': isotope_id,
+                        'days_post_dosing': row['Days post-dosing']
+                    }
+
                     # Insert Sample measurements
-                    new_sample_compound = m.SampleCompound(
-                        column_metadata=copy(sample_compound_metadata),
-                        sample_id=sample.id,
-                        compound_id=compound_ids[compound_map[row['Analyte']]],
-                        measurement=None if row[isotope] == 'BDL' else row[isotope],
-                        units=row['Analyte Units'],
-                        source_of_hg_spike_id=isotope_id
-                    )
+                    new_sample_compound = m.SampleCompound(**create_params)
                     session.add(new_sample_compound)
                     session.commit()
