@@ -1,6 +1,6 @@
 import models as m
 from sqlalchemy.orm import sessionmaker
-from helpers import find_compound_ids, find_institution_id, find_system_sample_id, find_isotope_ids, nan_to_none
+from helpers import find_compound_ids, find_institution_id, find_system_sample_id, find_isotope_ids, nan_to_none, insert_record
 import pandas as pd
 from copy import copy
 import json
@@ -53,20 +53,19 @@ def import_sample_sheet(session, location_id, dataframe):
             depth = row['Depth interval (in cm)']
             min_depth, max_depth = str(depth).split('-') \
                 if depth == depth and '-' in depth else [None, None]
-            sample = m.Sample(
-                institution_id=institution_id,
-                location_id=location_id,
-                column_metadata=copy(metadata),
-                collection_datetime=nan_to_none(row['Sampling date']),
-                min_depth=min_depth,
-                max_depth=max_depth,
-                sample_category='Sediment',
-                box_number=row['Box #'],
-                box_zone=row['Box Zone'],
-                replicate_number=row['Sample Replicate Number']
-            )
-            session.add(sample)
-            session.commit()
+            create_params = {
+                'institution_id': institution_id,
+                'location_id': location_id,
+                'column_metadata': copy(metadata),
+                'collection_datetime': nan_to_none(row['Sampling date']),
+                'min_depth': min_depth,
+                'max_depth': max_depth,
+                'sample_category': 'Sediment',
+                'box_number': row['Box #'],
+                'box_zone': row['Box Zone'],
+                'replicate_number': row['Sample Replicate Number'] 
+            }
+            sample = insert_record(session, m.Sample, create_params)
 
         if row['Analyte'] in compound_map.keys():
             if row['Analyte'] == 'LOI':
@@ -78,10 +77,7 @@ def import_sample_sheet(session, location_id, dataframe):
                     'units': row['Analyte Units'],
                     'days_post_dosing': row['Days post-dosing']
                 }
-                new_sample_compound = m.SampleCompound(**create_params)
-                session.add(new_sample_compound)
-                session.commit()
-
+                insert_record(session, m.SampleCompound, create_params)
             else:
                 for isotope, isotope_id in isotope_ids.items():
                     if isotope in row:
@@ -94,6 +90,4 @@ def import_sample_sheet(session, location_id, dataframe):
                             'source_of_hg_spike_id': isotope_id,
                             'days_post_dosing': row['Days post-dosing']
                         }
-                        new_sample_compound = m.SampleCompound(**create_params)
-                        session.add(new_sample_compound)
-                        session.commit()
+                        insert_record(session, m.SampleCompound, create_params)

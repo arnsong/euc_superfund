@@ -5,7 +5,7 @@ import json
 import pandas as pd
 import models as m
 from sqlalchemy.orm import sessionmaker
-from helpers import nan_to_none, find_institution_id, find_compound_ids, find_system_sample_id
+from helpers import nan_to_none, find_institution_id, find_compound_ids, find_system_sample_id, insert_record
 
 
 def extract_locations():
@@ -38,12 +38,11 @@ def import_locations():
         metadata = json.load(f)
 
     for idx, row in dataframe.iterrows():
-        new_location = m.Location(
-            site_name=nan_to_none(row['site_name']),
-            column_metadata=copy(metadata)
-        )
-        session.add(new_location)
-        session.commit()
+        create_params = {
+            'site_name': nan_to_none(row['site_name']),
+            'column_metadata': copy(metadata)
+        }
+        insert_record(session, m.Location, create_params)
 
 
 def import_samples():
@@ -79,49 +78,46 @@ def import_samples():
             depth = row['Core Depth']
             min_depth, max_depth = str(depth).split(' ')[0].split('-') \
                 if depth == depth and '-' in depth else [None, None]
-            sample = m.Sample(
-                institution_id=institution_id,
-                location_id=location_id,
-                column_metadata=copy(metadata),
-                lab_sample_id=row['LAB SAMPLE ID'],
-                collection_datetime=row['COLLECTION_DATE'],
-                file_name=row['SOURCE FILE'],
-                min_depth=min_depth,
-                max_depth=max_depth,
-                average_depth=nan_to_none(row['Ave Core depth (cm)']),
-                sample_type=row['SAMPLE TYPE'],
-                sample_category='Sediment'
-            )
-            session.add(sample)
-            session.commit()
+            create_params = {
+                'institution_id': institution_id,
+                'location_id': location_id,
+                'column_metadata': copy(metadata),
+                'lab_sample_id': row['LAB SAMPLE ID'],
+                'collection_datetime': row['COLLECTION_DATE'],
+                'file_name': row['SOURCE FILE'],
+                'min_depth': min_depth,
+                'max_depth': max_depth,
+                'average_depth': nan_to_none(row['Ave Core depth (cm)']),
+                'sample_type': row['SAMPLE TYPE'],
+                'sample_category': 'Sediment'
+            }
+            sample = insert_record(session, m.Sample, create_params)
 
         if row['PARAMETER'] in measurement_params_map.keys():
             # Insert Sample prep
-            new_sample_preparation = m.SamplePreparation(
-                column_metadata=copy(sample_preparation_metadata),
-                sample_id=sample.id,
-                analysis_date=row['ANALYSIS DATE'],
-                method=row['SAMPLING METHOD'],
-                filter=row['FILTER'],
-                preservation=nan_to_none(row['SAMPLE PRESERVATION']),
-                detection_limit=nan_to_none(row['DL']),
-                detection_limit_units=row['UNITS'],
-                detection_limit_flag=nan_to_none(row['DL Flag']),
-                dilution=nan_to_none(row['Dilution'])
-            )
-            session.add(new_sample_preparation)
-            session.commit()
+            create_params = {
+                'column_metadata': copy(sample_preparation_metadata),
+                'sample_id': sample.id,
+                'analysis_date': row['ANALYSIS DATE'],
+                'method': row['SAMPLING METHOD'],
+                'filter': row['FILTER'],
+                'preservation': nan_to_none(row['SAMPLE PRESERVATION']),
+                'detection_limit': nan_to_none(row['DL']),
+                'detection_limit_units': row['UNITS'],
+                'detection_limit_flag': nan_to_none(row['DL Flag']),
+                'dilution': nan_to_none(row['Dilution'])
+            }
+            insert_record(session, m.SamplePreparation, create_params)
 
             # Insert Sample measurements
-            new_sample_compound = m.SampleCompound(
-                column_metadata=copy(sample_compound_metadata),
-                sample_id=sample.id,
-                compound_id=compound_ids[measurement_params_map[row['PARAMETER']]],
-                measurement=row['VALUE'],
-                units=row['UNITS']
-            )
-            session.add(new_sample_compound)
-            session.commit()
+            create_params = {
+                'column_metadata': copy(sample_compound_metadata),
+                'sample_id': sample.id,
+                'compound_id': compound_ids[measurement_params_map[row['PARAMETER']]],
+                'measurement': row['VALUE'],
+                'units': row['UNITS']
+            }
+            insert_record(session, m.SampleCompound, create_params)
 
 
 def find_location_id(session, row):

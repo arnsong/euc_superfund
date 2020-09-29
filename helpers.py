@@ -37,3 +37,4 @@ def insert_record(session, model, create_params):
     new_record = model(**create_params)
     session.add(new_record)
     session.commit()
+    return new_record

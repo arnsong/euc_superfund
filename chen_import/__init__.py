@@ -5,7 +5,7 @@ import json
 import pandas as pd
 import models as m
 from sqlalchemy.orm import sessionmaker
-from helpers import nan_to_none, find_compound_ids, find_institution_id
+from helpers import nan_to_none, find_compound_ids, find_institution_id, insert_record
 
 
 def extract_locations():
@@ -38,18 +38,17 @@ def import_locations():
         metadata = json.load(f)
 
     for idx, row in dataframe.iterrows():
-        new_location = m.Location(
-            site_name=nan_to_none(row['site_name']),
-            site_code=nan_to_none(row['site_code']),
-            state=nan_to_none(row['state']),
-            system=nan_to_none(row['system']),
-            subsite=nan_to_none(row['subsite']),
-            latitude=row['latitude'],
-            longitude=row['longitude'],
-            column_metadata=copy(metadata)
-        )
-        session.add(new_location)
-        session.commit()
+        create_params = {
+            'site_name': nan_to_none(row['site_name']),
+            'site_code': nan_to_none(row['site_code']),
+            'state': nan_to_none(row['state']),
+            'system': nan_to_none(row['system']),
+            'subsite': nan_to_none(row['subsite']),
+            'latitude': row['latitude'],
+            'longitude': row['longitude'],
+            'column_metadata': copy(metadata)
+        }
+        insert_record(session, m.Location, create_params)
 
 
 def import_samples():
@@ -73,30 +72,28 @@ def import_samples():
         location_id = find_location_id(session, row)
         min_depth, max_depth = str(row['sample depth (cm)']).split('-') \
             if row['sample depth (cm)'] == row['sample depth (cm)'] else [None, None]
-        new_sample = m.Sample(
-            institution_id=institution_id,
-            location_id=location_id,
-            column_metadata=copy(metadata),
-            collection_datetime=row['sample_date'],
-            file_name=nan_to_none(row['file name for data pull']),
-            sample_type=row['sample type'],
-            sample_category='Sediment',
-            min_depth=min_depth,
-            max_depth=max_depth
-        )
-        session.add(new_sample)
-        session.commit()
+        create_params = {
+            'institution_id': institution_id,
+            'location_id': location_id,
+            'column_metadata': copy(metadata),
+            'collection_datetime': row['sample_date'],
+            'file_name': nan_to_none(row['file name for data pull']),
+            'sample_type': row['sample type'],
+            'sample_category': 'Sediment',
+            'min_depth': min_depth,
+            'max_depth': max_depth
+        }
+        new_sample = insert_record(session, m.Sample, create_params)
 
         for compound, measurement_array in compound_map.items():
-            new_sample_compound = m.SampleCompound(
-                column_metadata=copy(sample_compound_metadata),
-                sample_id=new_sample.id,
-                compound_id=compound_ids[compound],
-                measurement=row[measurement_array[0]] if str(row[measurement_array[0]]).strip() else None,
-                units=row[measurement_array[1]] if measurement_array[1] else None
-            )
-            session.add(new_sample_compound)
-            session.commit()
+            create_params = {
+                'column_metadata': copy(sample_compound_metadata),
+                'sample_id': new_sample.id,
+                'compound_id': compound_ids[compound],
+                'measurement': row[measurement_array[0]] if str(row[measurement_array[0]]).strip() else None,
+                'units': row[measurement_array[1]] if measurement_array[1] else None
+            }
+            insert_record(session, m.SampleCompound, create_params)
 
 
 def find_location_id(session, row):
