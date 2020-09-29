@@ -19,9 +19,11 @@ def import_location_and_samples():
     session.commit()
     # Is this CSV day 0?
     mercury_analysis_dataframe = pd.read_csv('duke_import/mercury_analysis.csv')
-    sequential_extractions = pd.read_csv('duke_import/sequential_extractions.csv')
+    sequential_extractions_dataframe = pd.read_csv('duke_import/sequential_extractions.csv')
+    loi_dataframe = pd.read_csv('duke_import/loi.csv')
     import_sample_sheet(session, new_location.id, mercury_analysis_dataframe)
-    import_sample_sheet(session, new_location.id, sequential_extractions)
+    import_sample_sheet(session, new_location.id, sequential_extractions_dataframe)
+    import_sample_sheet(session, new_location.id, loi_dataframe)
 
 
 def import_sample_sheet(session, location_id, dataframe):
@@ -30,7 +32,8 @@ def import_sample_sheet(session, location_id, dataframe):
     isotope_ids = find_isotope_ids(session)
     compound_map = {
         'TotHg': 'total_hg',
-        'MeHg': 'mehg'
+        'MeHg': 'mehg',
+        'LOI': 'percent_loi'
     }
 
     with open('sample.json') as f:
@@ -66,19 +69,31 @@ def import_sample_sheet(session, location_id, dataframe):
             session.commit()
 
         if row['Analyte'] in compound_map.keys():
-            for isotope, isotope_id in isotope_ids.items():
-                if isotope in row:
-                    create_params = {
-                        'column_metadata': copy(sample_compound_metadata),
-                        'sample_id': sample.id,
-                        'compound_id': compound_ids[compound_map[row['Analyte']]],
-                        'measurement': None if row[isotope] == 'BDL' else row[isotope],
-                        'units': row['Analyte Units'],
-                        'source_of_hg_spike_id': isotope_id,
-                        'days_post_dosing': row['Days post-dosing']
-                    }
+            if row['Analyte'] == 'LOI':
+                create_params = {
+                    'column_metadata': copy(sample_compound_metadata),
+                    'sample_id': sample.id,
+                    'compound_id': compound_ids[compound_map[row['Analyte']]],
+                    'measurement': row['Value'],
+                    'units': row['Analyte Units'],
+                    'days_post_dosing': row['Days post-dosing']
+                }
+                new_sample_compound = m.SampleCompound(**create_params)
+                session.add(new_sample_compound)
+                session.commit()
 
-                    # Insert Sample measurements
-                    new_sample_compound = m.SampleCompound(**create_params)
-                    session.add(new_sample_compound)
-                    session.commit()
+            else:
+                for isotope, isotope_id in isotope_ids.items():
+                    if isotope in row:
+                        create_params = {
+                            'column_metadata': copy(sample_compound_metadata),
+                            'sample_id': sample.id,
+                            'compound_id': compound_ids[compound_map[row['Analyte']]],
+                            'measurement': None if row[isotope] == 'BDL' else row[isotope],
+                            'units': row['Analyte Units'],
+                            'source_of_hg_spike_id': isotope_id,
+                            'days_post_dosing': row['Days post-dosing']
+                        }
+                        new_sample_compound = m.SampleCompound(**create_params)
+                        session.add(new_sample_compound)
+                        session.commit()

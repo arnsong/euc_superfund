@@ -31,3 +31,9 @@ def find_isotope_ids(session):
 def find_system_sample_id(session, query_dict):
     sample_id = session.query(m.Sample.id).filter_by(**query_dict)
     return sample_id[0] if sample_id.count() > 0 else None
+
+
+def insert_record(session, model, create_params):
+    new_record = model(**create_params)
+    session.add(new_record)
+    session.commit()
