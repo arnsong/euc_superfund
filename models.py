@@ -2,11 +2,14 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey, Numeric, DateTime, Text, Date, Boolean, Enum
 from sqlalchemy.dialects.postgresql import JSONB
+
+from sqlalchemy.orm import relationship
+
 import config
 import enum
 
 engine = create_engine(
-    f"postgresql+psycopg2://{config.DB_USER}:{config.DB_PASSWORD}@{config.DB_HOST}/{config.DB_NAME}", echo=True
+    f"postgresql+psycopg2://{config.DB_USER}:{config.DB_PASSWORD}@{config.DB_HOST}/{config.DB_NAME}", echo=False
 )
 Base = declarative_base()
 
@@ -66,6 +69,9 @@ class Sample(Base):
     box_number = Column(Integer)
     box_zone = Column(String(1))
     replicate_number = Column(String(2))
+
+    institution = relationship("Institution")
+    location = relationship("Location")
 
 
 # class WaterSample(Base):
@@ -210,7 +216,10 @@ class SampleCompound(Base):
     units = Column(String(10))
     source_of_hg_spike_id = Column(Integer, ForeignKey("isotopes.id"))
     days_post_dosing = Column(Integer)
-    # qa_flag = Column(String(10))
+
+    sample = relationship("Sample")
+    compound = relationship("Compound")
+    
 
 
 class Isotope(Base):
@@ -219,6 +228,25 @@ class Isotope(Base):
     id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
     column_metadata = Column(JSONB, nullable=False)
     name = Column(String(50))
+
+
+class NCCA(Base):
+    __tablename__ = 'ncca_data'
+
+    index = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
+    station = Column(String(50))
+    common_name = Column(String(50))
+
+    ACENTHE = Column(Numeric(10, 5))
+    ACENTHY = Column(Numeric(10, 5))
+    AG = Column(Numeric(10, 5))
+    AL = Column(Numeric(10, 5))
+    ALDRIN = Column(Numeric(10, 5))
+    ANTHRA = Column(Numeric(10, 5))
+    AS = Column(Numeric(10, 5))
+    BENANTH = Column(Numeric(10, 5))
+    BENAPY = Column(Numeric(10, 5))
+
 
 
 # class QualityControl(Base):

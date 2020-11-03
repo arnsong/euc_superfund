@@ -1,0 +1,22 @@
+version: "3.8"
+
+volumes:
+ data:
+
+services:
+  db:
+    build: 
+      context: .
+      dockerfile: Dockerfile.db
+    hostname: euc_db
+    container_name: euc_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - data:/var/lib/postgresql
+    environment:
+      - PGDATA=/var/lib/postgresql/data
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=sql
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=euc_data

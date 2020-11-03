@@ -55,6 +55,5 @@ def main():
     smithsonian_import.import_samples()
     duke_import.import_location_and_samples()
 
-
 if __name__ == "__main__":
     main()

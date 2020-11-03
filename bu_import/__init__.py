@@ -87,3 +87,13 @@ def import_sweden_locations():
         )
         session.add(new_location)
         session.commit()
+
+def import_samples():
+    Session = sessionmaker(bind=m.engine)
+    session = Session()
+
+    dataframe = pd.read_csv('bu_import/NBHFishTissueData_2003-2016.csv')
+    dataframe.to_sql('nbh_fish_tissue', con=m.engine)
+
+    dataframe = pd.read_csv('bu_import/sweden_data.csv')
+    dataframe.to_sql('sweden_data', con=m.engine)

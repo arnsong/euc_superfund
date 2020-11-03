@@ -37,3 +37,10 @@ def import_locations():
         )
         session.add(new_location)
         session.commit()
+
+def import_samples():
+    Session = sessionmaker(bind=m.engine)
+    session = Session()
+
+    dataframe = pd.read_csv('ncca_import/ncca.csv')
+    dataframe.to_sql('ncca_data', con=m.engine)
