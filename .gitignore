@@ -3,3 +3,9 @@ __pycache__
 
 # Ignore configuration
 config.py
+
+# Postgres files
+pgdata
+
+# Python compiled files
+*.pyc

@@ -8,4 +8,4 @@ RUN yum update -y && \
 
 COPY bokeh/test_app.py /root/test_app.py
 
-CMD [ "/root/miniconda/bin/bokeh", "serve", "/root/test_app.py", "--port", "8888", "--allow-websocket-origin=localhost:80"]
+CMD [ "/root/miniconda/bin/bokeh", "serve", "/root/test_app.py", "--port", "8888", "--allow-websocket-origin=toxic-metals.dartmouth.edu:80"]
