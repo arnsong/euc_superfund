@@ -11,13 +11,18 @@ from bokeh.models import (Button, ColumnDataSource, CustomJS, DataTable,
 datafiles = { 
               'Dartmouth': ['dartmouth/sediment_individual.csv'],
               'Duke': ['duke/mercury_analysis.csv'],
-              'Smithsonian': ['smithsonian/chesapeake_marsh.csv']
+              'Smithsonian': ['smithsonian/chesapeake_marsh.csv'],
+              'NCCA': ['NCCA/ncca2010_ecological_fish_tissue_contaminant_data.csv']
             }
 
 source = ColumnDataSource(data=dict())
 columns = []
 
 select = Select(title="Data source:", value="Dartmouth", options=["Dartmouth", "Duke", "Smithsonian"])
+
+df = pd.read_csv(join(dirname(__file__), datafiles[select.value][0]))
+source.data = df
+columns = [ TableColumn(field=column, title=column) for column in df.columns ]
 
 data_table = DataTable(source=source, columns=columns, width=1000, autosize_mode='fit_viewport')
 
