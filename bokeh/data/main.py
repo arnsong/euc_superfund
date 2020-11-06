@@ -18,7 +18,7 @@ datafiles = {
 source = ColumnDataSource(data=dict())
 columns = []
 
-select = Select(title="Data source:", value="Dartmouth", options=["Dartmouth", "Duke", "Smithsonian"])
+select = Select(title="Data source:", value="Dartmouth", options=["Dartmouth", "Duke", "Smithsonian", "NCCA"])
 
 df = pd.read_csv(join(dirname(__file__), datafiles[select.value][0]))
 source.data = df
@@ -26,7 +26,7 @@ columns = [ TableColumn(field=column, title=column) for column in df.columns ]
 
 data_table = DataTable(source=source, columns=columns, width=1000, autosize_mode='fit_viewport')
 
-def update(attr, old, new):
+def update():
 
     fname = join(dirname(__file__), datafiles[select.value][0])
     df = pd.read_csv(fname)
@@ -36,7 +36,7 @@ def update(attr, old, new):
     data_table.source.data = df
     data_table.columns = columns
 
-select.on_change('value', update)
+select.on_change('value', lambda attr, old, new: update())
 
 button = Button(label="Download", button_type="success")
 button.js_on_click(CustomJS(args=dict(source=source),
