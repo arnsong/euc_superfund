@@ -13,8 +13,8 @@ from bokeh.plotting import curdoc, figure
 
 doc = curdoc()
 
-fish_data = pd.read_csv('../data/NCCA/ncca2010_ecological_fish_tissue_contaminant_data.csv')
-location_data = pd.read_csv('../data/NCCA/assessed_ncca2010_siteinfo.revised.06212016.csv')
+fish_data = pd.read_csv('/root/app/data/NCCA/ncca2010_ecological_fish_tissue_contaminant_data.csv')
+location_data = pd.read_csv('/root/app/data/NCCA/assessed_ncca2010_siteinfo.revised.06212016.csv')
 
 fish_data['LAT_DD'] = None
 fish_data['LON_DD'] = None
