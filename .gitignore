@@ -9,3 +9,6 @@ pgdata
 
 # Python compiled files
 *.pyc
+
+# Jupyter notebooks
+*.ipynb
