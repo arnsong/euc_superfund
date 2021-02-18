@@ -1,0 +1,31 @@
+Filename: nrsa-fish-tissue-study-pbde-data-9-30-14.xlsx
+Type: xlsx
+Sheet: 'NRSA 2008 Sample Info'
+
+tables:
+  sites:
+    sqlalchemy_obj: Site
+    keys: [ SITE_ID ]
+    columns: 
+      EPA_REGION: "EPA Region"
+      SITE_ID: "Site ID"
+      STATE: State
+      WATERBODY_NAME: "River Name"
+      LATITUDE: Latitude
+      LONGITUDE: Longitude
+      SITE_TYPE: "Site Type"
+      STREAM_ORDER: "Stream Order"
+
+  samples:
+    sqlalchemy_obj: Sample
+    keys: [ EPA_SAMPLE_ID, SITE_ID ]
+    columns: 
+      EPA_SAMPLE_ID: "EPA Sample ID"
+      SITE_ID: "Site ID"
+      COLLECTION_DATE: "Sample Date"
+      FAMILY: Family
+      TAXA_NAME: "Species - Scientific Name"
+      COMMON_NAME: "Species - Common Name"
+      PRED_OR_BD: "Predator or Bottom Dweller"
+      TISSUE_TYPE: "Tissue Type"
+      COMMENTS: "Processing Issues"

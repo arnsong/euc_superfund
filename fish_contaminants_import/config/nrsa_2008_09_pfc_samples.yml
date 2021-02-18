@@ -1,0 +1,21 @@
+Filename: nrsa-fish-tissue-study-pfc-data-9-30-14.xlsx
+Type: xlsx
+Sheet: 'NRSA PFC Results'
+
+tables: 
+  samples:
+    sqlalchemy_obj: Sample
+    keys: [ EPA_SAMPLE_ID, PARAMETER_NAME ]
+    columns: 
+      EPA_SAMPLE_ID: "EPA Sample ID"
+      SITE_ID: "Site ID"
+      PARAMETER_NAME: Analyte
+      CAS_NO: "CAS Number"
+      AMOUNT: Amount
+      AMOUNT_UNITS: "Unit 1"
+      MDL: MDL
+      METHOD: Method
+      QL: QL
+      COMMENTS: Comments
+
+

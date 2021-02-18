@@ -1,0 +1,28 @@
+Filename: /Users/arnsong/Dropbox (Dartmouth College)/RC_EUCs_cchen/EUCs/EUC2/NRSA/mercury-data-2013-2014.xlsx
+Type: xlsx
+Sheet: '2013-14 NRSA Sample Info'
+
+tables:
+  sites:
+    sqlalchemy_obj: Site
+    keys: [ SITE_ID ]
+    columns: 
+      SITE_ID: Site ID
+      STATE: State
+      WATERBODY_NAME: River Name
+      LATITUDE: Latitude
+      LONGITUDE: Longitude
+      SITE_TYPE: Site Type
+      STREAM_ORDER: Stream Order
+
+  samples:
+    sqlalchemy_obj: Sample
+    keys: [ EPA_SAMPLE_ID, SITE_ID ]
+    columns: 
+      EPA_SAMPLE_ID: EPA Sample ID
+      SITE_ID: Site ID
+      COLLECTION_DATE: Sample Collection Date
+      FAMILY: Family
+      TAXA_NAME: Species - Scientific Name
+      COMMON_NAME: Species - Common Name
+      PRED_OR_BD: Predator or Bottom Dweller
