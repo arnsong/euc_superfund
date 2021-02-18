@@ -15,7 +15,7 @@ import pandas as pd
 
 
 # Import data from xlsx spreadsheet
-data = pd.read_excel('/root/app/fish_contaminants_map/Lake_fish_tissue_study_location12Feb2021.xlsx')
+data = pd.read_excel('/root/app/fish_contaminants_map/Lake_fish_tissue_study_location18Feb2021_updated.xlsx')
 
 analytes = [ "MERCURY NG/G (ppb)", \
             "TOTAL DICHLORO BIPHENYLS NG/KG (ppt)", \
@@ -27,7 +27,8 @@ analytes = [ "MERCURY NG/G (ppb)", \
             "TOTAL PCBS NG/KG (ppt)", \
             "TOTAL PENTACHLORO BIPHENYLS NG/KG (ppt)", \
             "TOTAL TETRACHLORO BIPHENYLS NG/KG (ppt)", \
-            "TOTAL TRICHLORO BIPHENYLS NG/KG (ppt)" ]
+            "TOTAL TRICHLORO BIPHENYLS NG/KG (ppt)",\
+            "TOTAL PCBS NG/G (ppb)"]
 
 
 # Initialize Bokeh document, which will contain all of the models
