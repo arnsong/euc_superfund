@@ -15,7 +15,7 @@ import pandas as pd
 
 
 # Import data from xlsx spreadsheet
-data = pd.read_excel('fish_contaminants_map/Lake_fish_tissue_study_location12Feb2021.xlsx')
+data = pd.read_excel('/root/app/fish_contaminants_map/Lake_fish_tissue_study_location12Feb2021.xlsx')
 
 analytes = [ "MERCURY NG/G (ppb)", \
             "TOTAL DICHLORO BIPHENYLS NG/KG (ppt)", \
@@ -44,7 +44,7 @@ analyte_map = gmap(gmap_key,
                    frame_width=800, frame_height=500)
 
 # Filter fish data
-map_data = data.loc[:, [ multiselect.value[0], 'Site_Name', 'Latitude', 'Longitude' ]]
+map_data = data.loc[data[multiselect.value[0]], [ multiselect.value[0], 'Site_Name', 'Latitude', 'Longitude' ]]
 map_data['analyte'] = multiselect.value[0]
 
 source = ColumnDataSource(
@@ -91,7 +91,7 @@ doc.add_root(row(column(multiselect, width=400), analyte_map))
 # Function to update map based on selected analyte
 def update():
     
-    df = data.loc[:, [ multiselect.value[0], 'Site_Name', 'Latitude', 'Longitude' ]]
+    df = data.loc[data[multiselect.value[0]]>0, [ multiselect.value[0], 'Site_Name', 'Latitude', 'Longitude' ]]
 
     if df is not None:
         color_mapper.low = max(0.001, min(df.loc[:,multiselect.value[0]]))
