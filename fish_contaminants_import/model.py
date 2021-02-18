@@ -2,6 +2,8 @@ import config
 
 from sqlalchemy.orm import relationship
 from sqlalchemy import Column, Integer, String, Float, DateTime, Numeric, ForeignKey
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import create_engine
 
 Base = declarative_base()
 
@@ -18,13 +20,13 @@ class Site(Base):
     NPS_PARK = Column(String(4))
     COUNTRY = Column(String(3))
     PROVINCE = Column(String(20))
-    STATE = Column(String(2))
+    STATE = Column(String(14))
 
-    WATERBODY_NAME = Column(String(30))
+    WATERBODY_NAME = Column(String(35))
     LATITUDE = Column(Float)
     LONGITUDE = Column(Float)
     MAP_DATUM = Column(String(12))
-    SITE_TYPE = Column(String(12))
+    SITE_TYPE = Column(String(30))
     STREAM_ORDER = Column(Integer)
     DSNTYPE = Column(String(5))
     MDCATY = Column(String(41))
@@ -62,11 +64,11 @@ class Sample(Base):
     LAB_SAMPLE_ID = Column(Integer)
     FAMILY = Column(String(13))
     TAXA_NAME = Column(String(34))
-    COMMON_NAME = Column(String(21))
+    COMMON_NAME = Column(String(40))
     TOTAL_LENGTH = Column(Integer)
     TOTAL_LENGTH_UNITS = Column(String(22))
     COMPOSITE = Column(String(3))
-    PRED_OR_BD = Column(String(2))
+    PRED_OR_BD = Column(String(20))
     COMPOSITE_CLASS = Column(String(11))
     DEVIATION = Column(String(16))
     PARAMETER = Column(String(10))
@@ -83,7 +85,7 @@ class Sample(Base):
     METHOD = Column(String(10))
     QA_CODES = Column(String(21))
     FILLET_PREP = Column(String(255))
-    TISSUE_TYPE = Column(String(14))
+    TISSUE_TYPE = Column(String(40))
     PERCENT_LIPIDS = Column(Float)
     DATE_ANALYZED = Column(DateTime)
     HOLDING_TIME = Column(Integer)

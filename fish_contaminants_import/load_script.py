@@ -1,14 +1,12 @@
 #!/usr/bin/env python
 
 import config
-from model import engine
+from model import engine, Site, Sample
 
 import os, sys, argparse
 import sys
 
-from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
 
 import yaml
 import pandas as pd
@@ -18,7 +16,7 @@ import pandas as pd
 
 def load_config(config_file):
 
-    mappings = iter(yaml.load_all(open(config_file), Loader.yaml.FullLoader))
+    mappings = iter(yaml.load_all(open(config_file), Loader=yaml.FullLoader))
     file_info = next(mappings)
 
     return file_info, mappings
@@ -44,14 +42,14 @@ def load_datafile(datafile, mapping, engine=None, datafile_type='xlsx', if_exist
         print(f"Loading {sheet} in {datafile}")
 
         if datafile_type == 'xlsx':
-            data = pd.read_excel(datafile, sheet)
+            data_orig = pd.read_excel(datafile, sheet)
         else:
-            data = pd.read_csv(datafile)
+            data_orig = pd.read_csv(datafile)
 
         for table in mapping['tables']:
 
             # Make a copy of the data b/c we'd like to keep the column names
-            data_modified = data.copy()
+            data = data_orig.copy()
 
             # Rename column headings and drop columns that are not in the mapping
             columns = mapping['tables'][table]['columns']
@@ -71,6 +69,8 @@ def load_datafile(datafile, mapping, engine=None, datafile_type='xlsx', if_exist
 
                 for key in keys:
                     value = row[key]
+                    if isinstance(value, str):
+                        value.replace("'", "\\'")
                     eval_string += f'.filter({obj}.{key}=="{value}")'
 
                 eval_string += ".all()"
@@ -87,8 +87,7 @@ def load_datafile(datafile, mapping, engine=None, datafile_type='xlsx', if_exist
                             if col=='STREAM_ORDER':
                                 if row[col]=='8+':
                                     row[col] = '8'
-                            value = row[col]
-                            exec(f'result.{col}="{value}"')
+                            col_update = setattr(result, col, row[col])
 
                 if idx%100==0:
                     print(f"Index: {idx}/{len(data.index)}")
@@ -109,10 +108,10 @@ if __name__ == '__main__':
 
     # Parse arguments
     argparser = argparse.ArgumentParser(description=__file__)
-    argparser.add_argument('-p', '--path', help='The path to the directory containing the datafiles', const='')
+    argparser.add_argument('-p', '--path', help='The path to the directory containing the datafiles')
     argparser.add_argument('-f', '--files', help='Name of data load configuration file(s)', nargs='+', required=True)
     args = argparser.parse_args()
 
     
     for config_file in args.files:
-        load_dataset(config_file, datafile_path)
+        load_dataset(config_file, args.path)

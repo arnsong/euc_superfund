@@ -1,36 +1,36 @@
 Filename: Year1and2_results.xls
 Type: xlsx
 
----
-sheets: [ 'YEAR1_RESULTS(A-M)', 'YEAR1_RESULTS(N-Z)', 'YEAR2_RESULTS(A-M)', 'YEAR2_RESULTS(N-Z)' ]
-tables:
-  sites:
-    sqlalchemy_obj: Site
-    keys: [ SITE_ID ]
-    columns: 
-      STATE: State
-      SITE_ID: Lake_ID_Number
-      WATERBODY_NAME: Site_Name
-      LATITUDE: Latitude
-      LONGITUDE: Longitude
-      SITE_TYPE: Water_Body_Type
-
-  samples:
-    sqlalchemy_obj: Sample
-    keys: [ EPA_SAMPLE_ID, SAMPLE_ID ]
-    columns: 
-      EPA_SAMPLE_ID: EPA Sample ID
-      SAMPLE_ID: Composite_Sample_ID
-      PRED_OR_BD: Composite_Type
-      TISSUE_TYPE: Preparation
-      PERCENT_LIPIDS: Percent_Lipids
-      PARAMETER_NAME: Analyte
-      CAS_NO: CAS_Number
-      AMOUNT: Amount
-      AMOUNT_UNITS: Unit
-      MDL: Replimit
-      METHOD: Method_Number
-      COMMENTS: Comments
+#---
+#sheets: [ 'YEAR1_RESULTS(A-M)', 'YEAR1_RESULTS(N-Z)', 'YEAR2_RESULTS(A-M)', 'YEAR2_RESULTS(N-Z)' ]
+#tables:
+#  sites:
+#    sqlalchemy_obj: Site
+#    keys: [ SITE_ID ]
+#    columns: 
+#      STATE: State
+#      SITE_ID: Lake_ID_Number
+#      WATERBODY_NAME: Site_Name
+#      LATITUDE: Latitude
+#      LONGITUDE: Longitude
+#      SITE_TYPE: Water_Body_Type
+#
+#  samples:
+#    sqlalchemy_obj: Sample
+#    keys: [ EPA_SAMPLE_ID, SAMPLE_ID ]
+#    columns: 
+#      EPA_SAMPLE_ID: EPA_Sample_Number
+#      SAMPLE_ID: Composite_Sample_ID
+#      PRED_OR_BD: Composite_Type
+#      TISSUE_TYPE: Preparation
+#      PERCENT_LIPIDS: Percent_Lipids
+#      PARAMETER_NAME: Analyte
+#      CAS_NO: CAS_Number
+#      AMOUNT: Amount
+#      AMOUNT_UNITS: Unit
+#      MDL: Replimit
+#      METHOD: Method_Number
+#      COMMENTS: Comments
 
 ---
 sheets: [ 'YEAR1_SAMPLE_DESCRIPTION', 'YEAR2_SAMPLE_DESCRIPTION' ] 
@@ -39,7 +39,7 @@ tables:
     sqlalchemy_obj: Sample
     keys: [ EPA_SAMPLE_ID, SAMPLE_ID ]
     columns: 
-      EPA_SAMPLE_ID: EPA Sample ID
+      EPA_SAMPLE_ID: EPA_Sample_Number
       COLLECTION_DATE: Sampling_Date
       SAMPLE_ID: Composite_Sample_ID
       COMMON_NAME: Fish_Species

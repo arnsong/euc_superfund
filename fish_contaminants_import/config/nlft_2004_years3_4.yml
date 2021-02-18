@@ -19,7 +19,7 @@ tables:
     sqlalchemy_obj: Sample
     keys: [ EPA_SAMPLE_ID, SAMPLE_ID ]
     columns: 
-      EPA_SAMPLE_ID: EPA Sample ID
+      EPA_SAMPLE_ID: EPA_Sample_Number
       SAMPLE_ID: Composite_Sample_ID
       PRED_OR_BD: Composite_Type
       TISSUE_TYPE: Preparation
@@ -39,7 +39,7 @@ tables:
     sqlalchemy_obj: Sample
     keys: [ EPA_SAMPLE_ID, SAMPLE_ID ]
     columns: 
-      EPA_SAMPLE_ID: EPA Sample ID
+      EPA_SAMPLE_ID: EPA_Sample_Number
       COLLECTION_DATE: Sampling_Date
       SAMPLE_ID: Composite_Sample_ID
       COMMON_NAME: Fish_Species
