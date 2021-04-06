@@ -8,4 +8,4 @@ RUN yum update -y && \
 
 COPY bokeh /root/app
 
-CMD [ "/root/miniconda/bin/bokeh", "serve", "/root/app/data", "/root/app/map_visualization", "/root/app/fish_contaminants_map", "--port", "8888", "--allow-websocket-origin=toxic-metals.dartmouth.edu:80"]
+CMD [ "/root/miniconda/bin/bokeh", "serve", "/root/app/data", "/root/app/map_visualization", "/root/app/fish_contaminants_map", "--port", "8888" ]
