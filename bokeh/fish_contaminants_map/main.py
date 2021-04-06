@@ -12,11 +12,9 @@ from bokeh.layouts import column, row
 import colorcet as cc
 
 import pandas as pd
-import numpy as np
-import pdb
 
 # Import data from xlsx spreadsheet
-data = pd.read_excel('fish_contaminants_map/Lake_fish_tissue_study_location_5Mar2021.xlsx')
+data = pd.read_excel('/root/app/fish_contaminants_map/Lake_fish_tissue_study_location_5Mar2021.xlsx')
 
 analytes = [ "Mercury ng/g (ppb)", \
             "Total dichloro biphenyls ng/g (ppb)", \
