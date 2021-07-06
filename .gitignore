@@ -13,3 +13,7 @@ pgdata
 
 # Jupyter notebooks
 *.ipynb
+
+# Site certificate files
+cert.pem
+key.cer
